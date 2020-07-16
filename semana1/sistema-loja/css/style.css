@@ -38,7 +38,7 @@ nav a{
     color: white;
     padding-left: 20px;
 }
-/*BODY*/
+/*BODY DO INDEX*/
 .descricao h2{
     margin: 20px 0 10px 0;
 }
@@ -53,4 +53,11 @@ nav a{
 }
 .sobre p {
     font-size: 115%;
+}
+/*BODY DO CTRL-ESTOQUE*/
+P{
+    margin: 20px 0 30px 0;
+}
+table{
+    margin: 20px auto;
 }
