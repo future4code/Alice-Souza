@@ -7,7 +7,8 @@
 }
 body{
     text-align: center;
-    background-color: rgba(150, 146, 146, 0.329);
+    background-color: #14144e1c;
+    color:  #443f57;
 }
 a{
     text-decoration: none;
@@ -18,7 +19,7 @@ ul{
 /*TOPO*/
 header{
     width: 100%;
-    background-color: rgb(155, 27, 49);
+    background-color: #443f57;
     color: white;
     height: 70px;
 }
@@ -38,4 +39,18 @@ nav a{
     padding-left: 20px;
 }
 /*BODY*/
-
+.descricao h2{
+    margin: 20px 0 10px 0;
+}
+.sobre{
+    margin: 60px auto;
+    width: 60%;
+    text-align: start;
+}
+.sobre h3{
+    font-size: 140%;
+    margin-bottom: 10px
+}
+.sobre p {
+    font-size: 115%;
+}
