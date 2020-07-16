@@ -19,5 +19,20 @@ header{
     width: 100%;
     background-color: rgb(155, 27, 49);
     color: pink;
+    height: 70px;
+}
+.container{
+    padding-top: 15px;
+    margin: 0 auto;
+    width: 90%;
     display: flex;
+    justify-content: space-between;
+}
+nav{
+    width: 50%;
+    padding-top: 10px;
+}
+nav a{
+    color: pink;
+    padding-left: 20px;
 }
