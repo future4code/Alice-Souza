@@ -61,3 +61,12 @@ P{
 table{
     margin: 20px auto;
 }
+/*FOOTER*/
+footer{
+    background-color: #443f57;
+    width: 100%;
+    height: 70px;
+    bottom: 0;
+    position: fixed;
+    color: white; 
+}
