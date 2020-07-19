@@ -1,0 +1,215 @@
+/*RESET*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Baloo Da 2', cursive, Arial, Helvetica, sans-serif;
+    text-decoration: none;
+    list-style: none;
+    color: #e9d4f5;
+}
+body{
+    background-color: #201E2B;
+}
+h2{
+    color: aliceblue;
+    font-size: 190%;
+    margin-bottom: 37px;
+}
+.secao:not(#contato){
+    margin: 80px 0 0 0;
+    padding-bottom: 80px;
+    border-bottom: #f0f8ffc7 1px outset;
+    text-align: center;
+}
+/*BODY DE INDEX*/
+#topo{
+    width: 100%;
+    height: 70px;
+    background-color: #32223C;
+}
+.container{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.container h1{
+    color: aliceblue;
+    padding-top: 12px;
+    font-family: 'Dancing Script', cursive, Arial, Helvetica, sans-serif;
+    font-size: 220%;
+    text-shadow: 3px 3px 5px black;
+}
+.menu ul{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 15px;
+}
+.menu ul li{
+    padding-left: 30px;
+    font-size: 130%;
+}
+.menu ul li a{
+    color: aliceblue;
+}
+.menu ul li a:hover{
+    text-shadow: 3px 3px 3px black;
+}
+#principal-inicio{
+    width: 85%;
+    margin: auto;
+}
+#apresentacao h2{
+    margin-bottom: 7px;
+    font-size: 150%;
+}
+#apresentacao img{
+    width: 200px;
+    border-radius: 50%;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.774);
+}
+.all-projetos{
+    display: flex;
+    justify-content: space-between;
+}
+.projeto{
+    background-color: #353246;
+    border-radius: 0 0 18px 18px;
+    border: solid #ffffffa6 1px;
+    box-shadow: 2px 2px 6px black;
+    margin-bottom: 14px;
+}
+.projeto img{
+    width: 340px;
+    border: solid #ffffff83 1px;
+}
+.projeto h4{
+    height: 50px;
+    font-size: 115%;
+    padding-top: 7px;
+    font-weight: 200;
+}
+#experiencias ul{
+    text-align: start;
+    margin-left: 33%;
+}
+#experiencias ul li{
+    list-style: disc;
+    font-size: 122%;
+    padding-bottom: 13px;
+}
+.all-formacoes{
+    display: flex;
+    flex-wrap: wrap;
+    width: 58%;
+    margin-left: 20%;
+}
+.formacao{
+    width: 43%;
+    background-color: #353246;
+    height: 227px;
+    margin-left: 45px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 6px black;
+}
+.web-design, .logica{
+    margin-bottom: 45px;
+}
+.formacao p{
+    padding-top: 53px;
+    font-size: 135%;
+}
+#habilidades h3{
+    font-size: 130%;
+}
+#habilidades p{
+    font-size: 120%;
+}
+.left{
+    text-align: start;
+}
+.right{
+    text-align: end;
+    margin: 20px 0 20px 0;
+}
+#contato{
+    margin: 80px 0 0 0;
+    padding-bottom: 80px;
+    text-align: center;
+}
+.telefone, .email{
+    display: flex;
+    width: 30%;
+    text-align: start;
+    margin-left: 30%;
+}
+.telefone img, .email img{
+    width: 70px;
+    border-radius: 50%;
+    margin: 0 20px 30px 0;
+    box-shadow: 2px 2px 3px black;
+}
+.telefone p, .email p{
+    padding-top: 15px;
+    font-size: 125%;  
+}
+form{
+    text-align: start;
+    margin-left: 30%;
+}
+form p{
+    font-size: 138%;
+    text-shadow: 3px 3px 3px black;
+}
+form input{
+    height: 40px;
+    margin-bottom: 10px;
+}
+form textarea{
+    height: 85px;
+    padding-top: 10px;
+}
+.campo, button{
+    color: black;
+    border-radius: 10px;
+    padding-left: 10px;
+    width: 50%;
+    box-shadow: 2px 2px 3px black;
+    outline: none;
+    border: none;
+    background-color: #fffff0cb;
+}
+button{
+    background-color: #553d64;
+    color: #f6ebeb;
+    width: 20%;
+    padding: 0;
+    height: 30px;
+    font-size: 120%;
+    cursor: pointer;
+    border: solid rgba(255, 255, 255, 0.514) 1px;
+    height: 40px;
+}
+#rodape{
+    height: 90px;
+    width: 100%;
+    background-color: #32223C;
+    text-align: center;
+}
+.redes p{
+    margin-top: 20px;
+}
+.redes img{
+    width: 40px;
+    margin: 10px 8px 0 8px;
+}
+.github{
+    border-radius: 50%;
+    height: 40px;
+}
+
+
+
+
+
