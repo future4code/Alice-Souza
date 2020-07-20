@@ -21,6 +21,7 @@ input {
     width: 500px;
     border: none;
     border-bottom: 3px solid black;
+    outline: none;
 }
 
 button:focus {
