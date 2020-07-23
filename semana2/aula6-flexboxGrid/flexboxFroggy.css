@@ -1,0 +1,191 @@
+/*
+ *RESPOSTAS JOGO FLEXBOX:
+*/
+
+/* 
+Resposta 1:
+
+  justify-content: flex-end;
+*/
+
+/* 
+Resposta 2:
+
+  justify-content: center;
+*/
+
+/* 
+Resposta 3:
+
+  justify-content: space-around;
+*/
+
+/* 
+Resposta 4:
+
+  justify-content: space-between;
+*/
+
+/* 
+Resposta 5:
+
+  align-items: flex-end;
+*/
+
+/* 
+Resposta 6:
+
+  justify-content: center;
+  align-items: center;
+*/
+
+/* 
+Resposta 7:
+
+  justify-content: space-around;
+  align-items: flex-end;
+*/
+
+/*
+Resposta 8:
+
+  flex-direction: row-reverse;
+*/
+
+/* 
+Resposta 9:
+
+  flex-direction: column;
+*/
+
+/* 
+Resposta 10:
+
+  flex-direction: row-reverse;
+  justify-content: flex-end;
+*/
+
+/* 
+Resposta 11:
+
+  flex-direction: column;
+  justify-content: flex-end;
+*/
+
+/* 
+Resposta 12:
+
+  flex-direction: column-reverse;
+  justify-content: space-between;
+*/
+
+/* 
+Resposta 13:
+
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: flex-end;  
+*/
+
+/*
+Resposta 14:
+
+  order: 3;
+*/
+
+/*
+Resposta 15:
+
+  order: -1;
+*/
+
+/*
+Resposta 16:
+
+  order: 5;
+  align-self: flex-end;
+*/
+
+/*
+Resposta 17:
+
+  order: 5;
+  align-self: flex-end;
+*/
+
+/*
+Resposta 18:
+
+  flex-wrap: wrap;
+*/
+
+/*
+Resposta 19:
+
+  flex-direction: column;
+  flex-wrap: wrap;
+*/
+
+/*
+Resposta 20:
+
+  flex-flow: column wrap;
+*/
+
+/*
+Resposta 21:
+
+  align-content: flex-start;
+*/
+
+/*
+Resposta 22:
+
+  align-content: flex-end;
+*/
+
+/*
+Resposta 23:
+
+  flex-direction: column-reverse;
+  align-content: center;
+*/
+
+/*
+Resposta 24:
+
+  flex-flow: column-reverse wrap-reverse;
+  align-content: space-between;
+  justify-content: center;
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

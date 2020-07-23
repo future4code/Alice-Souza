@@ -1,0 +1,132 @@
+/*
+ *RESPOSTAS JOGO GRID:
+*/
+
+/* 
+Resposta 1:
+
+  grid-column-start: 3;
+*/
+
+/* 
+Resposta 2:
+
+  grid-column-start: 5;
+*/
+
+/* 
+Resposta 3:
+
+  grid-column-end: 4;
+*/
+
+/* 
+Resposta 4:
+
+  grid-column-end: 2;
+*/
+
+/* 
+Resposta 5:
+
+  grid-column-end: -2;
+*/
+
+/* 
+Resposta 6:
+
+  grid-column-start: 4;
+*/
+
+/* 
+Resposta 7:
+
+  grid-column-end: span 2;
+*/
+
+/* 
+Resposta 8:
+
+  grid-column-end: span 5;
+*/
+
+/* 
+Resposta 9:
+
+  grid-column-start: 3;
+*/
+
+/* 
+Resposta 10:
+
+  grid-column: 6 / 4;
+*/
+
+/* 
+Resposta 11:
+
+  grid-column: span 3 / 5;
+*/
+
+/* 
+Resposta 12:
+
+  grid-row-start: 3;
+*/
+
+/* 
+Resposta 13:
+
+  grid-row: 3 / 6;
+*/
+
+/* 
+Resposta 14:
+
+  grid-column: 2;
+  grid-row: 5;
+*/
+
+/* 
+Resposta 15:
+
+  grid-column: 2 / 6;
+  grid-row: 1 / 6;
+*/
+
+/* 
+Resposta 16:
+
+  grid-area: 1 / 2 / 4 / 6;
+*/
+
+/* 
+Resposta 17:
+
+  grid-area: 2 / 3 / 5 / 6;
+*/
+
+/* 
+Resposta 18:
+
+  order: 1;
+*/
+
+/* 
+Resposta 19:
+
+  order: -1;
+*/
+
+/* 
+Resposta 20:
+
+  grid-template-columns: 50%;
+*/
+
+/* 
+Resposta 21:
+
+  grid-template-columns: repeat(3, 12.5%);
+*/
+
