@@ -43,3 +43,19 @@ console.log("3. Qual é seu signo? " + signo);
 console.log("4. Qual seu filme favorito? " + filme);
 console.log("5. Qual sua cor preferida? " + cor);
 
+// 3.
+
+let comidasPreferidas = ['Feijão', 'Pipoca', 'Laranja', 'Doce de amendoim', 'Pamonha'];
+
+console.log(comidasPreferidas);
+
+console.log('Essas são as minhas comidas preferidas:')
+console.log(comidasPreferidas[0]);
+console.log(comidasPreferidas[1]);
+console.log(comidasPreferidas[2]);
+console.log(comidasPreferidas[3]);
+console.log(comidasPreferidas[4]);
+
+comidasPreferidas[1] = prompt ("Qual sua comida preferida?")
+console.log(comidasPreferidas);
+
