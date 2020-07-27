@@ -21,7 +21,7 @@ console.log(typeof idade);
 // indefinida, sem significado.
 
 nome = prompt ("Digite seu nome");
-idade = prompt ("Digite sua idade");
+idade = Number(prompt("Digite sua idade"));
 console.log(typeof nome);
 console.log(typeof idade);
 
