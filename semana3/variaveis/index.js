@@ -25,7 +25,8 @@ idade = Number(prompt("Digite sua idade"));
 console.log(typeof nome);
 console.log(typeof idade);
 
-// Foi impresso "string" para as duas variáveis, pois agora o usuário dá um valor a elas.
+// Foi impresso "string" e "number" para as duas variáveis respectivamente, pois 
+// agora o usuário dá um valor a elas e transformei a última variável de string para number.
 
 console.log("Olá " + nome + ", " + "você tem " + idade + " anos.");
 
