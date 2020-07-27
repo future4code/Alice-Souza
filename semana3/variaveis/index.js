@@ -28,3 +28,18 @@ console.log(typeof idade);
 // Foi impresso "string" para as duas variáveis, pois agora o usuário dá um valor a elas.
 
 console.log("Olá " + nome + ", " + "você tem " + idade + " anos.");
+
+// 2.
+
+let name = prompt ("Qual o seu nome?");
+let years = prompt ("Quantos anos você tem?");
+let signo = prompt ("Qual é seu signo?");
+let filme = prompt ("Qual seu filme favorito?");
+let cor = prompt ("Qual sua cor preferida?");
+
+console.log("1. Qual o seu nome? " + name);
+console.log("2. Quantos anos você tem? " + years);
+console.log("3. Qual é seu signo? " + signo);
+console.log("4. Qual seu filme favorito? " + filme);
+console.log("5. Qual sua cor preferida? " + cor);
+
