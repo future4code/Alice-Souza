@@ -59,3 +59,11 @@ console.log(comidasPreferidas[4]);
 comidasPreferidas[1] = prompt ("Qual sua comida preferida?")
 console.log(comidasPreferidas);
 
+// 4.
+
+const perguntas = ["Você tem filhos(as)?", "Você é brasileiro(a)?", "Você trabalha?"];
+const respostas = [false, true, false];
+console.log(perguntas[0], respostas[0]);
+console.log(perguntas[1], respostas[1]);
+console.log(perguntas[2], respostas[2]);
+
