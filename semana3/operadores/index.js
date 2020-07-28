@@ -27,3 +27,18 @@ let numeroPar = Number(prompt("Digite um número par"));
 console.log(numeroPar % 2);
 // O resto é sempre 0, porque os números inseridos são pares.
 // Se o usuário inserir número ímpar, restará sempre 1.
+
+// 3.
+let listaDeTarefas = [];
+
+listaDeTarefas[0] = prompt("Qual a primeira tarefa do dia?");
+listaDeTarefas[1] = prompt("Qual a segunda tarefa do dia?");
+listaDeTarefas[2] = prompt("Qual a terceira tarefa do dia?");
+
+console.log(listaDeTarefas);
+
+let indiceRemover = prompt("Digite o índice da tarefa que já realizou");
+
+listaDeTarefas[indiceRemover] = '';
+
+console.log("Tarefas que faltam realizar: ", listaDeTarefas);
