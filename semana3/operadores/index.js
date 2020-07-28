@@ -42,3 +42,8 @@ let indiceRemover = prompt("Digite o índice da tarefa que já realizou");
 listaDeTarefas[indiceRemover] = '';
 
 console.log("Tarefas que faltam realizar: ", listaDeTarefas);
+
+// 4.
+const nome = prompt("Digite seu nome");
+const email = prompt("Digite seu email");
+console.log('O email ', email, ' foi cadastrado com sucesso. Seja bem-vinda(o) ', nome);
