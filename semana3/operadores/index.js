@@ -22,3 +22,8 @@ let idadeAmiga = Number(prompt("Qual a idade da sua melhor amiga?"));
 console.log("Sua idade é maior do que a da sua melhor amiga?", idadeUsuario > idadeAmiga);
 console.log("Diferença da sua idade para a da sua melhor amiga: ", idadeUsuario - idadeAmiga);
 
+// 2.
+let numeroPar = Number(prompt("Digite um número par"));
+console.log(numeroPar % 2);
+// O resto é sempre 0, porque os números inseridos são pares.
+// Se o usuário inserir número ímpar, restará sempre 1.
