@@ -80,5 +80,111 @@
 //   console.log("Escolha outro filme :(");
 // };
 
+// DESAFIO 2:
+
+// // Solicitações:
+// const nomeCompleto = prompt("Qual o seu nome completo?");
+// const tipoJogo = prompt("Qual o tipo de jogo? Digite IN para Internacional ou DO \
+// para Doméstico").toUpperCase();
+// const etapaJogo = prompt("Qual a etapa do jogo? Digite SF para Semifinal, DT para Decisão\
+//  de Terceiro Lugar ou FI para Final.").toUpperCase();
+// const categoria = Number(prompt("Qual a categoria? 1, 2, 3, ou 4?"));
+// const quantIngressos = Number(prompt("Qual a quantidade de ingressos?"));
+
+// // Imprimindo os valores solicitados (com algumas condicionais p/ as siglas):
+// console.log("---Dados da Compra---");
+// console.log("Nome do cliente:", nomeCompleto);
+// if (tipoJogo === "IN"){
+// console.log("Tipo do jogo: Internacional");
+// } else {
+//   console.log("Tipo do jogo: Doméstico")
+// };
+// if (etapaJogo === "SF"){
+// console.log("Etapa do jogo: Semifinal");
+// } else if (etapaJogo === "DT"){
+//   console.log("Etapa do jogo: Decisão de Terceiro Lugar");
+// } else {
+//   console.log("Etapa do jogo: Final");
+// };
+// console.log("Categoria:", categoria);
+// console.log("Quantidade de ingressos:", quantIngressos);
+// console.log("---Valores---");
+
+// // Condicionais (que estão na tabela)
+// if (tipoJogo === "DO" && etapaJogo === "SF" && categoria === 1) { 
+//   console.log("Valor do ingresso: R$", 1320);
+//   console.log("Valor total: R$ ", quantIngressos * 1.320)
+// } else if (tipoJogo === "IN" && etapaJogo === "SF" && categoria === 1) { 
+//   console.log("Valor do ingresso: U$", 1320 * 4.10);
+//   console.log("Valor total: U$ ", 1320 * 4.10 * quantIngressos);
+// } else if (tipoJogo === "DO" && etapaJogo === "SF" && categoria === 2) { 
+//   console.log("Valor do ingresso: R$", 880);
+//   console.log("Valor total: R$ ", quantIngressos * 880);
+// } else if (tipoJogo === "IN" && etapaJogo === "SF" && categoria === 2) {
+//   console.log("Valor do ingresso: R$", 880 * 4.10);
+//   console.log("Valor total: R$ ",  880 * 4.10 * quantIngressos);
+// } else if (tipoJogo === "DO" && etapaJogo === "SF" && categoria === 3) { 
+//   console.log("Valor do ingresso: R$", 550);
+//   console.log("Valor total: R$ ", quantIngressos * 550);
+// } else if (tipoJogo === "IN" && etapaJogo === "SF" && categoria === 3) {
+//   console.log("Valor do ingresso: R$", 550 * 4.10);
+//   console.log("Valor total: R$ ",  550 * 4.10 * quantIngressos);
+// } else if (tipoJogo === "DO" && etapaJogo === "SF" && categoria === 4) { 
+//   console.log("Valor do ingresso: R$", 220);
+//   console.log("Valor total: R$ ", quantIngressos * 220);
+// } else if (tipoJogo === "IN" && etapaJogo === "SF" && categoria === 4) {
+//   console.log("Valor do ingresso: R$", 220 * 4.10);
+//   console.log("Valor total: R$ ",  220 * 4.10 * quantIngressos);
+// } else if (tipoJogo === "DO" && etapaJogo === "DT" && categoria === 1) { 
+//   console.log("Valor do ingresso: R$", 660);
+//   console.log("Valor total: R$ ", quantIngressos * 660);
+// } else if (tipoJogo === "IN" && etapaJogo === "DT" && categoria === 1) {
+//   console.log("Valor do ingresso: R$", 660 * 4.10);
+//   console.log("Valor total: R$ ",  660 * 4.10 * quantIngressos);
+// } else if (tipoJogo === "DO" && etapaJogo === "DT" && categoria === 2) { 
+//   console.log("Valor do ingresso: R$", 440);
+//   console.log("Valor total: R$ ", quantIngressos * 440);
+// } else if (tipoJogo === "IN" && etapaJogo === "DT" && categoria === 2) {
+//   console.log("Valor do ingresso: R$", 440 * 4.10);
+//   console.log("Valor total: R$ ",  440 * 4.10 * quantIngressos);
+// } else if (tipoJogo === "DO" && etapaJogo === "DT" && categoria === 3) { 
+//   console.log("Valor do ingresso: R$", 330);
+//   console.log("Valor total: R$ ", quantIngressos * 330);
+// } else if (tipoJogo === "IN" && etapaJogo === "DT" && categoria === 3) {
+//   console.log("Valor do ingresso: R$", 330 * 4.10);
+//   console.log("Valor total: R$ ",  330 * 4.10 * quantIngressos);
+// } else if (tipoJogo === "DO" && etapaJogo === "DT" && categoria === 4) { 
+//   console.log("Valor do ingresso: R$", 170);
+//   console.log("Valor total: R$ ", quantIngressos * 170);
+// } else if (tipoJogo === "IN" && etapaJogo === "DT" && categoria === 4) {
+//   console.log("Valor do ingresso: R$", 170 * 4.10);
+//   console.log("Valor total: R$ ",  170 * 4.10 * quantIngressos);
+// } else if (tipoJogo === "DO" && etapaJogo === "FI" && categoria === 1) { 
+//   console.log("Valor do ingresso: R$", 1980);
+//   console.log("Valor total: R$ ", quantIngressos * 1980);
+// } else if (tipoJogo === "IN" && etapaJogo === "FI" && categoria === 1) {
+//   console.log("Valor do ingresso: R$", 1980 * 4.10);
+//   console.log("Valor total: R$ ",  1980 * 4.10 * quantIngressos);
+// } else if (tipoJogo === "DO" && etapaJogo === "FI" && categoria === 2) { 
+//   console.log("Valor do ingresso: R$", 1320);
+//   console.log("Valor total: R$ ", quantIngressos * 1320);
+// } else if (tipoJogo === "IN" && etapaJogo === "FI" && categoria === 2) {
+//   console.log("Valor do ingresso: R$", 1320 * 4.10);
+//   console.log("Valor total: R$ ",  1320 * 4.10 * quantIngressos);
+// } else if (tipoJogo === "DO" && etapaJogo === "FI" && categoria === 3) { 
+//   console.log("Valor do ingresso: R$", 880);
+//   console.log("Valor total: R$ ", quantIngressos * 880);
+// } else if (tipoJogo === "IN" && etapaJogo === "FI" && categoria === 3) {
+//   console.log("Valor do ingresso: R$", 880 * 4.10);
+//   console.log("Valor total: R$ ",  880 * 4.10 * quantIngressos);
+// } else if (tipoJogo === "DO" && etapaJogo === "FI" && categoria === 4) { 
+//   console.log("Valor do ingresso: R$", 330);
+//   console.log("Valor total: R$ ", quantIngressos * 330);
+// } else if (tipoJogo === "IN" && etapaJogo === "FI" && categoria === 4) {
+//   console.log("Valor do ingresso: R$", 330 * 4.10);
+//   console.log("Valor total: R$ ",  330 * 4.10 * quantIngressos);
+// };
+
+
 
 
