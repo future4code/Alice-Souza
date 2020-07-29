@@ -27,4 +27,18 @@
 //   console.log("Você não pode dirigir!");
 // };
 
+// 5.
+// const turno = toUpperCase(prompt("Aluno, qual o seu turno? Digite M para matutino,\
+//  V para vespertino ou N para noturno"));
+// if (turno === "M") {
+//   console.log("Bom dia!");
+// } else if (turno === "V") {
+//   console.log("Boa tarde!");
+// } else if (turno === "N") {
+//   console.log("Boa noite!");
+// } else {
+//   console.log("Turno inválido!");
+// };
+
+
 
