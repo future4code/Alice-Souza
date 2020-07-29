@@ -28,17 +28,33 @@
 // };
 
 // 5.
-// const turno = toUpperCase(prompt("Aluno, qual o seu turno? Digite M para matutino,\
-//  V para vespertino ou N para noturno"));
-// if (turno === "M") {
+// const turno = prompt("Aluno, qual o seu turno? Digite M para matutino,\
+//  V para vespertino ou N para noturno");
+// if (turno.toUpperCase() === "M") {
 //   console.log("Bom dia!");
-// } else if (turno === "V") {
+// } else if (turno.toUpperCase() === "V") {
 //   console.log("Boa tarde!");
-// } else if (turno === "N") {
+// } else if (turno.toUpperCase() === "N") {
 //   console.log("Boa noite!");
 // } else {
 //   console.log("Turno inválido!");
 // };
 
-
+// 6.
+// const turno = prompt("Aluno, qual o seu turno? Digite M para matutino,\
+//  V para vespertino ou N para noturno");
+// switch(turno.toUpperCase()){
+//   case "M":
+//     console.log("Bom dia")
+//     break;
+//   case "V":
+//     console.log("Boa tarde!")
+//     break;
+//   case "N":
+//     console.log("Boa noite!")
+//     break;
+//   default:
+//     console.log("Turno inválido!")
+//     break;
+// };
 
