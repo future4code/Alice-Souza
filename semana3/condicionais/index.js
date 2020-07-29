@@ -68,4 +68,17 @@
 // };
 
 
+// DESAFIO 1:
+
+// let generoFilme = prompt("Qual o gênero do filme?");
+// let precoIngresso = Number(prompt("Qual o preço do ingresso?"));
+// if (generoFilme === "fantasia" && precoIngresso <= 15) {
+//   console.log("Bom filme!");
+//   let snack = prompt("Qual snack você vai comprar?");
+//   console.log("...com", snack);
+// } else {
+//   console.log("Escolha outro filme :(");
+// };
+
+
 
