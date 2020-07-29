@@ -17,3 +17,14 @@
 // Se for o -10, retorna um erro.
 // c. Sim, haverá erro, pois o escopo filho não compartilha sua variável com o pai.
 
+// EXERCÍCIOS DE ESCRITA:
+
+// 4.
+// const idade = Number(prompt("Digite sua idade"));
+// if (idade >= 18){
+//   console.log("Você pode dirigir!");
+// } else {
+//   console.log("Você não pode dirigir!");
+// };
+
+
