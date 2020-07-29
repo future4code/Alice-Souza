@@ -58,3 +58,14 @@
 //     break;
 // };
 
+// 7.
+// let generoFilme = prompt("Qual o gênero do filme?");
+// let precoIngresso = Number(prompt("Qual o preço do ingresso?"));
+// if (generoFilme === "fantasia" && precoIngresso <= 15) {
+//   console.log("Bom filme!");
+// } else {
+//   console.log("Escolha outro filme :(");
+// };
+
+
+
