@@ -18,3 +18,55 @@
 // quantidade digitada, faça o que está no for, que é o seguinte: enquanto \
 // asteriscos (índice) for menor que a qunatidade atual +1, some um ao índice \
 // E a cada repetição desse for, será atribuído um zero a cada linha.
+
+// EXERCÍCIOS DE ESCRITA:
+
+// 3.
+
+// // a.
+// const arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]; 
+// for (numero of arrayOriginal){
+//   console.log(numero);
+// };
+
+// // b.
+// const arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]; 
+// for (numero of arrayOriginal){
+//   console.log(numero / 10);
+// };
+
+// // c.
+// const arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]; 
+// let pares = [];
+// for (numero of arrayOriginal){
+//   if (numero % 2 === 0){
+//     pares = numero
+//   }
+//   console.log(pares)
+// }
+
+// // d.
+// const arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]; 
+// for (i = 0; i < arrayOriginal.length; i++){
+//   console.log(`O elemento do índex ${i} é: ${arrayOriginal[i]}`);
+// };
+
+// // e.
+// const arrayOriginal = [80, 30, 130, 40, 60, 21, 70, 120, 90, 103, 110, 55]; 
+// let valorMaximo = 0;  
+// for (i = 0; i < arrayOriginal.length; i++) {
+//   if (arrayOriginal[i] > valorMaximo) {
+//       valorMaximo = arrayOriginal[i]; 
+//     };
+// };
+// console.log(`Valor máximo: ${valorMaximo}`); 
+// let valorMinimo = 140;  
+// for (i = 0; i < arrayOriginal.length; i++) {
+//   if (arrayOriginal[i] < valorMinimo) {
+//       valorMinimo = arrayOriginal[i]; 
+//     };
+// };
+// console.log(`Valor mínimo: ${valorMinimo}`);
+
+
+
