@@ -48,6 +48,34 @@
 // };
 // console.log(sobreMim('Alice', 21, 'Rio de Janeiro', condicao(true)));
 
+//
+// // 5:
+//
+// a.
+// const somar = (a, b) => {
+//   return a + b;
+// };
+// console.log(somar(2, 4));
+//
+// b.
+// const boolean = (c, d) => {
+//   if (c >= d) {
+//     return 'O primeiro número é maior ou igual ao segundo.';
+//   } else {
+//     return 'O primeiro número NÃO é maior ou igual ao segundo.'
+//   };
+// };
+// console.log(boolean(8, 4));
+//
+// c.
+// const imprimeMensagem = (mensagem) => {
+//   for (i = 1; i <= 10; i++){
+//     console.log(i, mensagem);
+//   };
+// };
+// imprimeMensagem('Olá, mundo!');
+
+
 
 
 
