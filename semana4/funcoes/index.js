@@ -16,4 +16,10 @@
 // b. Amanda
 //    Caio
 
+//
+// // 3:
+//
+// A função pega somente os números pares do array e multiplica cada um por ele 
+// mesmo. Um bom nome para a função seria "MultiplicaPar".
+
 
