@@ -23,3 +23,33 @@
 // mesmo. Um bom nome para a função seria "MultiplicaPar".
 
 
+// EXERCÍCIOS DE ESCRITA:
+
+//
+// // 4:
+//
+
+// a.
+// const sobreMim = () => {
+//   return 'Eu sou Alice, tenho 21 anos, moro no Rio de Janeiro e sou estudante.';
+// };
+// console.log(sobreMim());
+
+// b.
+// const sobreMim = (nome, idade, cidade, condicao) => {
+//   return `Eu sou ${nome}, tenho ${idade} anos, moro no ${cidade} e ${condicao} estudante.`;
+// };
+// const condicao = (boolean) => {
+//   if (boolean === true) {
+//     return 'sou'
+//   } else {
+//     return 'não sou'
+//   };
+// };
+// console.log(sobreMim('Alice', 21, 'Rio de Janeiro', condicao(true)));
+
+
+
+
+
+
