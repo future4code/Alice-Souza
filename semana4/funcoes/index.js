@@ -75,6 +75,58 @@
 // };
 // imprimeMensagem('Olá, mundo!');
 
+//
+// // 6:
+//
+// a.
+// const numeros = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22];
+// const iterar = (array) => {
+//   for (numero of array){
+//     console.log(numero)
+//   };
+// };
+// iterar(numeros);
+//
+// b.
+// const parOuImpar = (numero) => {
+//   if (numero % 2 === 0){
+//     console.log('O número é PAR.');
+//   } else {
+//     console.log('O número é ÍMPAR.');
+//   };
+// };
+// parOuImpar(7);
+//
+// c.
+// const numeros = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22];
+// const numerosPares = [];
+// const quantidadePares = (array) => {
+//   for (numero of array){
+//     if (numero % 2 === 0) {
+//       numerosPares.push(numero);
+//     };
+//   };
+//   console.log(`Tem ${numerosPares.length} números pares dentro do array`);
+// };
+// quantidadePares(numeros);
+//
+// d.
+// const numeros = [10, 23, 45, 78, 90, 52, 35, 67, 84, 22];
+// const parOuImpar = (array) => {
+//   for (numero of array) {
+//     if (numero % 2 === 0){
+//       console.log(`O número ${numero} é PAR.`);
+//     } else {
+//       console.log(`O número ${numero} é ÍMPAR.`);
+//     };
+//   }
+// };
+// parOuImpar(numeros);
+
+
+
+
+
 
 
 
