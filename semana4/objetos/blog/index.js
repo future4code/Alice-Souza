@@ -13,7 +13,7 @@ const criarPost = () => {
   };
   // Atribuindo seus valores para a seção do post:
   let containerPost = document.getElementById('container-de-posts');
-  containerPost.innerHTML += `<h1>${post.titulo}</h1> <img src=${post.imagem}> <pre>${post.conteudo}</pre> <h3>${post.autor}</h3>`;
+  containerPost.innerHTML += `<h1>${post.titulo}</h1> <img src=${post.imagem}> <p>${post.conteudo}</p> <h3>${post.autor}</h3>`;
   // Limpando o formulário:
   const arrayPost = [tituloPost, imagemPost, autorPost, conteudoPost];
   arrayPost[0].value = '';

@@ -21,7 +21,7 @@ body{
     border-radius: 20px;
 }
 
-form {
+.form {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
@@ -66,7 +66,4 @@ button {
 #container-de-posts img {
     width: 40%;
     margin: 15px 0;
-}
-#container-de-posts pre {
-    width: 90%;
 }
