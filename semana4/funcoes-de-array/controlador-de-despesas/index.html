@@ -9,58 +9,64 @@
 </head>
 <body>
   <header> <!--Cabeçalho-->
-    <h1>Labenu Bank</h1>
-    <h1>Controlador de despesas</h1>
+    <div>
+      <h1>Labenu Bank</h1>
+      <h2>CONTROLADOR DE DESPESAS</h2>
+    </div>
   </header>
   <main> <!--Corpo (principal)-->
     <section> <!--Seção de cadastro-->
       <h2>Cadastro de despesa(s):</h2>
       <form>
         <label for="valor">Valor:</label> 
-        <input type="number" id="valor" min="10" max="1000" step="5">
+        <input type="number" id="valor" min="10" max="1000" step="5"> <br>
         <label for="tipo">Tipo:</label>
         <select id="tipo">
           <option value="">Selecione um tipo</option>
-          <option value="casa">Casa</option>
-          <option value="viagem">Viagem</option>
-          <option value="saude">Saúde</option>
-          <option value="festa">Festa</option>
-          <option value="alimentacao">Alimentação</option>
-        </select>
+          <option value="Casa">Casa</option>
+          <option value="Viagem">Viagem</option>
+          <option value="Saude">Saúde</option>
+          <option value="Festa">Festa</option>
+          <option value="Alimentacao">Alimentação</option>
+        </select> <br>
         <label for="descricao">Descrição:</label>
         <input type="text" id="descricao">
       </form>
-      <button>CADASTRAR</button>
+      <button onclick="cadastrarDespesa()">CADASTRAR</button>
     </section>
     <section> <!--Seção de lista e filtro-->
       <h2>Lista de despesa(s):</h2>
-      <div class='lista'>
-        <h4 class="sem-lista-recente">SEM LISTA RECENTE</h4>
-      </div>
-      <h3>Filtrar lista:</h3>
+      <div class='lista-despesa'></div>
+      <h2>Filtrar lista:</h2>
       <form>
-        <label for="tipoFiltra">Tipo de gasto:</label>
-        <select id="tipoFiltra">
+        <label for="tipo-filtra">Tipo de gasto:</label>
+        <select id="tipo-filtra">
           <option value="">Selecione um tipo</option>
-          <option value="casaFiltra">Casa</option>
-          <option value="viagemFiltra">Viagem</option>
-          <option value="saudeFiltra">Saúde</option>
-          <option value="festaFiltra">Festa</option>
-          <option value="alimentacaoFiltra">Alimentação</option>
-        </select>
-        <label for="valorMinimo">Valor mínimo:</label>
-        <input type="number" id="valorMinimo" min="10" max="1000" step="5">
-        <label for="valorMinimo">Valor máximo:</label>
-        <input type="number" id="valorMaximo" min="15" max="1000" step="5">
+          <option value="casa-filtra">Casa</option>
+          <option value="viagem-filtra">Viagem</option>
+          <option value="saude-filtra">Saúde</option>
+          <option value="festa-filtra">Festa</option>
+          <option value="alimentacao-filtra">Alimentação</option>
+        </select> <br>
+        <label for="valor-minimo">Valor mínimo:</label>
+        <input type="number" id="valor-minimo" min="10" max="1000" step="5"> <br>
+        <label for="valor-maximo">Valor máximo:</label>
+        <input type="number" id="valor-maximo" min="15" max="1000" step="5"> <br>
       </form>
       <button>FILTRAR</button>
-      <div class="lista-filtrada">
-        <h4 class="sem-lista-filtrada">SEM LISTA FILTRADA</h4>
-      </div>
+      <div class="lista-filtrada"></div>
     </section>
     <section> <!--Seção de extrato-->
-      
+      <h2>Extrato de despesa(s):</h2>
+      <div class="lista-extrato">
+      </div>
+      <span>
+        <h4>TOTAL: R$..<h4 class="total-valor"></h4></h4>
+      </span>
     </section>
   </main>
+  <footer>
+    <p>Labenu Bank - LTDA. 2020.</p>
+  </footer>
 </body>
 </html>
