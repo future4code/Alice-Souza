@@ -5,9 +5,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css">
   <script src="./js/script.js" defer></script>
-  <title>Labenu Bank</title>
+  <title>Controlador de despesas | Labenu Bank</title>
 </head>
 <body>
-  
+  <header> <!--Cabeçalho-->
+    <h1>Labenu Bank</h1>
+    <h1>Controlador de despesas</h1>
+  </header>
+  <main> <!--Corpo (principal)-->
+    <section> <!--Seção de cadastro-->
+      <h2>Cadastro de despesa(s):</h2>
+      <form>
+        <label for="valor">Valor:</label> 
+        <input type="number" id="valor" min="10" max="1000" step="5">
+        <label for="tipo">Tipo:</label>
+        <select id="tipo">
+          <option value="">Selecione um tipo</option>
+          <option value="casa">Casa</option>
+          <option value="viagem">Viagem</option>
+          <option value="saude">Saúde</option>
+          <option value="festa">Festa</option>
+          <option value="alimentacao">Alimentação</option>
+        </select>
+        <label for="descricao">Descrição:</label>
+        <input type="text" id="descricao">
+      </form>
+      <button>CADASTRAR</button>
+    </section>
+    <section> <!--Seção de lista e filtro-->
+      <h2>Lista de despesa(s):</h2>
+      <div class='lista'>
+        <h4 class="sem-lista-recente">SEM LISTA RECENTE</h4>
+      </div>
+      <h3>Filtrar lista:</h3>
+      <form>
+        <label for="tipoFiltra">Tipo de gasto:</label>
+        <select id="tipoFiltra">
+          <option value="">Selecione um tipo</option>
+          <option value="casaFiltra">Casa</option>
+          <option value="viagemFiltra">Viagem</option>
+          <option value="saudeFiltra">Saúde</option>
+          <option value="festaFiltra">Festa</option>
+          <option value="alimentacaoFiltra">Alimentação</option>
+        </select>
+        <label for="valorMinimo">Valor mínimo:</label>
+        <input type="number" id="valorMinimo" min="10" max="1000" step="5">
+        <label for="valorMinimo">Valor máximo:</label>
+        <input type="number" id="valorMaximo" min="15" max="1000" step="5">
+      </form>
+      <button>FILTRAR</button>
+      <div class="lista-filtrada">
+        <h4 class="sem-lista-filtrada">SEM LISTA FILTRADA</h4>
+      </div>
+    </section>
+    <section> <!--Seção de extrato-->
+      
+    </section>
+  </main>
 </body>
 </html>
