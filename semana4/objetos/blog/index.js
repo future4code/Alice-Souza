@@ -21,6 +21,14 @@ const criarPost = () => {
   arrayPost[2].value = '';
   arrayPost[3].value = '';
 };
+const apertouEnter = (evento) => {
+  if (evento.key === 'Enter'){
+      criarPost();
+  };
+};
+function clicouBotao() {
+  criarPost();
+};
 
 
 

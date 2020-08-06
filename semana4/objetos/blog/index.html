@@ -9,26 +9,25 @@
     <title>Blog</title>
 </head>
 <body>
+    <h1 class="header">Crie seu post</h1>
     <section id="formulario">
-        <form action="">
+        <form action="post.html">
             <label for="titulo-post">Título:</label>
-            <input type="text" id="titulo-post">
+            <input type="text" id="titulo-post" onkeydown="apertouEnter(event)">
 
             <label for="imagem-post">Imagem (opcional):</label>
-            <input type="text" id="imagem-post" placeholder="Insira o link da imagem aqui">
+            <input type="text" id="imagem-post" placeholder="Insira o link da imagem aqui" onkeydown="apertouEnter(event)">
 
             <label for="autor-post">Autor:</label>
-            <input type="text" id="autor-post">
+            <input type="text" id="autor-post" onkeydown="apertouEnter(event)">
 
             <label for="conteudo-post">Conteúdo:</label>
-            <textarea id="conteudo-post" cols="30" rows="10"></textarea>
+            <textarea id="conteudo-post" cols="30" rows="10" onkeydown="apertouEnter(event)"></textarea>
 
         </form>
-        <button onclick='criarPost()'>Criar Post</button>
+        <button onclick='clicouBotao()'>Criar Post</button>
     </section>
-
     <section id="container-de-posts">
         
     </section>
-</body>
 </html>
