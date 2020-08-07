@@ -44,3 +44,42 @@
 // 1590
 // -10
 
+// ----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
+
+// // // EXERCÍCIOS DE LÓGICA DE PROGRAMAÇÃO:
+
+// -------------------------------
+
+//  1:
+// --------
+// // FOR:
+// let numeros = [1, 2, 3, 4, 78];
+// const iteraListaUm = (array) => {
+//   for (i = 0; i < array.length; i++) {
+//     console.log(i);
+//   };
+// };
+// iteraListaUm(numeros);
+// --------
+// // FOR..OF:
+// const iteraListaDois = () => {
+//   let array = [1, 2, 3, 4, 5];
+//   for (item of array) {
+//     console.log(item);
+// }};
+// iteraListaDois();
+// --------
+// // FOREACH:
+// let listaTres = ['Alice', 'Luna', 'Beatriz', 'Leo', 'Jonas'];
+// listaTres.forEach(nome => {
+//   console.log(nome);
+// });
+// --------
+// // MAP:
+// let listaQuatro = ['BA', 'PR', 'SP', 'RJ', 'PB', 'AM'];
+// let iteraListaQuatro = listaQuatro.map((estado) => {
+//   console.log (`${estado} é um estado.`);
+// });
+
+
