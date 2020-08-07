@@ -114,3 +114,35 @@
 // };
 // verificaTriangulo(10, 14, 12);
 
+//  5:
+// -------
+// const verificaNumero = (a, b) => {
+//   if (a === b) {  // Caso sejam iguais, para a função e mostra o seguinte:
+//     console.log('Os dois números são iguais');
+//     console.log ('A diferença entre eles é 0');
+//   } else {  // Caso não sejam iguais:
+//     if (a > b) {  // Verificando o maior 
+//       console.log(`O maior é: ${a}`);
+//     } else{
+//       console.log(`O maior é: ${b}`);
+//     };
+//     if (a % b === 0) {  // Verificando se a é divisível por b
+//       console.log(`${a} é divisível por ${b}`);
+//     } else {
+//       console.log(`${a} não é divisível por ${b}`);
+//     }; 
+//     if (b % a === 0) {  // Verifica se b é divisível por a
+//       console.log(`${b} é divisível por ${a}`);
+//     } else {
+//       console.log(`${b} não é divisível por ${a}`);
+//     };
+//     if (a > b) {  // Calculando a diferença p/ retornar positivo
+//       console.log (`A diferença entre eles é ${a - b}`);
+//     } else{
+//       console.log(`A diferença entre eles é ${b - a}`);
+//     };
+//   };
+// };
+// verificaNumero(15, 3);
+
+
