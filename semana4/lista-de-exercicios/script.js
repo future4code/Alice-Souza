@@ -90,3 +90,14 @@
 // d. true 
 // e. false
 
+//  3:
+// -------
+// // O código não funcionou, pois precisava de um valor para a quantidade
+// // e não tinha incremento. O código arrumado ficou assim:
+// const quantidadeDeNumerosPares = 7;
+// let i = 0;
+// while(i < quantidadeDeNumerosPares) {
+//   console.log(i*2);
+//   i++
+// };
+
