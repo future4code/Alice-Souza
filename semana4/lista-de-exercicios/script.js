@@ -101,3 +101,16 @@
 //   i++
 // };
 
+//  4:
+// -------
+// const verificaTriangulo = (a, b, c) => {
+//   if (a === b && b === c && c === a) {
+//     console.log('O triângulo é EQUILÁTERO');
+//   } else if ((b === a && c !== b && c !== a) || (a === c && b !== c && b !== a) || (a !== c && b !== a && b === c)) {
+//     console.log('O triângulo é ISÓSCELES');
+//   } else if (a !== b && b !== c && c !== a) {
+//     console.log('O triângulo é ESCALENO');
+//   };
+// };
+// verificaTriangulo(10, 14, 12);
+
