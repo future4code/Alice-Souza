@@ -21,3 +21,13 @@
 // cionais, é emitido um alert. E no final, como dito, irá retornar o valor após
 // o investimento. Em seguida o usuário pode fazer quantas simulações quiser.
 
+//  3:
+// ------
+// No "array1" ficam os números pares do array "numeros" e no "array2" ficam
+// os ímpares. Isso é feito com o for..of, que pega cada item do array "numeros"
+// e filtra eles (pares e ímpares). Se forem pares, vao para o "array1", se não, 
+// vão para o "array2". Será impresso no console o seguinte:
+// Quantidade total de números 14
+// 6
+// 8
+
