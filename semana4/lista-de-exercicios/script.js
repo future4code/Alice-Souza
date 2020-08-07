@@ -31,3 +31,16 @@
 // 6
 // 8
 
+//   4:
+// ------
+// Encontra o maior e o menor números do array. 
+// É dado um valor inicial para as variáveis que receberão esses dois números.
+// O valor inicial para a variável do menor número é Infinity (maior que qualquer
+// número). E o inicial do maior número é 0. Depois é feito um for..of que pega
+// cada elemento do array. Daí é colocado numa condicional. Primeiro, se o índex
+// do array for menor que infinity, atribui esse índex à variável (o maior número).
+// Depois é feito o contrário para encontrar o maior número.
+// Será impresso no console o seguinte:
+// 1590
+// -10
+
