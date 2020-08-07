@@ -1,0 +1,95 @@
+/* RESET */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body{
+  background-color: #ffe9e3;
+  height: 100vh;
+}
+/* TOPO */
+header {
+  background: #4b3c41;
+  width: 100%;
+  height: 60px;
+}
+header div {
+  height: 100%;
+  width: 85%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header h2 {
+  color: #E4C2BB;
+}
+header h1 {
+  color: #ffe9e3;
+}
+/* CORPO - PRINCIPAL */
+main {
+  display: flex;
+  width: 85%;
+  margin: 0 auto;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+/* SEÇÕES */
+section {
+  margin: 80px 0 80px 0;
+  padding: 15px;
+  border-radius: 12px;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.212); 
+  width: 32%;
+  background-color: white;
+  color: #4b3c41d8;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+h2, form label, form input, button{
+  margin: 10px 0 10px 0;
+}
+h2 {
+  color: #2e2428;
+}
+h3 {
+  color: black
+}
+h5 {
+  margin-bottom: 10px;
+}
+span {
+  display: flex;
+}
+button {
+  padding: 5px;
+  border-radius: 10px;
+}
+.lista-despesa, .lista-filtrada{
+  margin: 10px 0 10px 0;
+  background-color: #E4C2BB;
+  padding: 7px;
+}
+.lista-extrato {
+  margin: 10px 0 10px 0;
+}
+.lista-filtrada {
+  background-color: #b0baa3;
+}
+/* RODAPÉ */
+footer {
+  background: #4b3c41;
+  color: #ffe9e3;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
