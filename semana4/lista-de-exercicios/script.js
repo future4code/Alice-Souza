@@ -145,4 +145,34 @@
 // };
 // verificaNumero(15, 3);
 
+// ----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
+
+// // // EXERCÍCIOS DE FUNÇÕES:
+
+// -------------------------------
+
+//  1:
+// -------
+// let numerosArray = [1, 43, 2, 54, 78, 90, 50];
+// numerosArray.shift();
+// numerosArray.pop();
+// const verificaNumeros = (array) => {
+//   let segundoMenor = Infinity;
+//   let segundoMaior = 0;
+//   for (numero of array) {
+//     if (numero < segundoMenor) {
+//       segundoMenor = numero;
+//     }
+//   };
+//   for (numero of array) {
+//     if (numero > segundoMaior) {
+//       segundoMaior = numero;
+//     }
+//   }
+//   console.log(segundoMenor);
+//   console.log(segundoMaior);
+// };
+// verificaNumeros(numerosArray);
+
 
