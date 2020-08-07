@@ -82,4 +82,11 @@
 //   console.log (`${estado} é um estado.`);
 // });
 
+//  2:
+// -------
+// a. false 
+// b. false 
+// c. true 
+// d. true 
+// e. false
 
