@@ -173,6 +173,12 @@
 // };
 // verificaNumeros(numerosArray);
 
+//  2:
+// ------
+// const alerta = () => {
+//   alert("Hello, Labenu!");
+// };
+// alerta();
 
 
 
