@@ -313,6 +313,33 @@
 // });
 // console.log(pessoasNaoPermitidas);
 
+//  4:
+// ------
+// Array de todas as consultas:
+// const consultas = [
+//   { nome: "João", genero: "masculino", cancelada: true, dataDaConsulta: "01/10/2019" },
+// 	{ nome: "Pedro", genero: "masculino", cancelada: false, dataDaConsulta: "02/10/2019" },
+// 	{ nome: "Paula", genero: "feminino", cancelada: true, dataDaConsulta: "03/11/2019" },
+// 	{ nome: "Márcia", genero: "feminino", cancelada: false, dataDaConsulta: "04/11/2019" }
+// ];
+// // Filtrando as consultas não canceladas:
+// let consultaNaoCancelada = consultas.filter(consulta => {
+//   return consulta.cancelada === false;
+// });
+// // Filtrando as consultas canceladas:
+// let consultaCancelada = consultas.filter(consulta => {
+//   return consulta.cancelada === true;
+// });
+// // Criando um email para as consultas não canceladas:
+// let consultasNaoCanceladas = consultaNaoCancelada.map(cons => {
+//   console.log(`Olá, Sr(a) ${cons.nome}. Estamos enviando esta mensagem para lembrá-lo(a) da sua consulta no dia ${cons.dataDaConsulta}. Por favor, acuse o recebimento deste e-mail.`);
+// });
+// // Criando um email para as consultas canceladas:
+// let consultasCanceladas = consultaCancelada.map(consu => {
+//   console.log(`Olá, Sr(a) ${consu.nome}. Infelizmente, sua consulta marcada para o dia ${consu.dataDaConsulta} foi cancelada. Se quiser, pode entrar em contato conosco para remarcá-la`);
+// });
+
+
 
 
 
