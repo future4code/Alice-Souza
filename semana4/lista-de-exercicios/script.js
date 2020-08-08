@@ -204,6 +204,24 @@
 // };
 // console.log(criaRetangulo(10, 4));
 
+//  3:
+// -------
+// const meuFilme = () => {
+//   const filmeFavorito = {
+//     titulo: 'O auto da Compadecida',
+//     ano: 2000,
+//     diretor: 'Guel Arraes',
+//     atores: [
+//       {ator1: 'Matheus Nachtergaele'},
+//       {ator2: 'Selton Mello'},
+//       {atriz: 'Denise Fraga'}
+//     ],
+//   };
+//   console.log(`Venha assistir ao filme ${filmeFavorito.titulo}, de ${filmeFavorito.
+// ano}, dirigido por ${filmeFavorito.diretor}, estrelado por ${filmeFavorito.atores[0].
+// ator1}, ${filmeFavorito.atores[1].ator2} e ${filmeFavorito.atores[2].atriz}.`);
+// };
+// meuFilme();
 
 
 
