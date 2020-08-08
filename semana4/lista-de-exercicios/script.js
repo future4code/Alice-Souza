@@ -240,6 +240,36 @@
 // };
 // anonimizarPessoa();
 
+// ----------------------------------------------------------------------------
+// ----------------------------------------------------------------------------
+
+// // // EXERCÍCIOS DE FUNÇÕES DE ARRAYS:
+
+// -------------------------------
+
+//  1:
+// ------
+// const pessoas = [
+// 	{ nome: "Pedro", idade: 20 },
+// 	{ nome: "João", idade: 10 },
+// 	{ nome: "Paula", idade: 12 },
+// 	{ nome: "Artur", idade: 89 } 
+// ];
+// // -------
+// // // a:
+// const pessoasMaiores = pessoas.filter((pessoa) => {
+//   return pessoa.idade >= 20;
+// });
+// console.log(pessoasMaiores);
+// // -------
+// // // b:
+// const pessoasMenores = pessoas.filter((pessoa) => {
+//   return pessoa.idade < 20;
+// });
+// console.log(pessoasMenores);
+
+
+
 
 
 
