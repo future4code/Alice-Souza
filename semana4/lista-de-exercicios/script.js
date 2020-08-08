@@ -268,6 +268,30 @@
 // });
 // console.log(pessoasMenores);
 
+//  2:
+// -------
+// const array = [1, 2, 3, 4, 5, 6];
+// // ------
+// // // a:
+// const numeroVezesDois = array.map(numero => numero * 2);
+// console.log(numeroVezesDois);
+// // ------
+// // // b:
+// const numeroVezesTres = array.map(numero => String(numero * 3));
+// console.log(numeroVezesTres);
+// // ------
+// // // c:
+// const paresEImpares = array.map((numero) => {
+//   if (numero % 2 === 0) {
+//     return String(numero) + ' é par'
+//   } else {
+//     return String(numero) + ' é ímpar'
+//   };
+// });
+// console.log(paresEImpares);
+
+
+
 
 
 
