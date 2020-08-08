@@ -223,6 +223,22 @@
 // };
 // meuFilme();
 
+//  4:
+// -------
+// const pessoa = {
+//   nome: 'João',
+//   idade: 34,
+//   email: 'joao123@hotmail.com.br',
+//   endereco: 'Rua das Flores, 321'
+// };
+// const anonimizarPessoa = () => {
+//   let pessoaAnonima = {
+//     ...pessoa,
+//     nome: 'ANÔNIMO'
+//   };
+//   console.log(pessoaAnonima);
+// };
+// anonimizarPessoa();
 
 
 
