@@ -191,6 +191,20 @@
 // Quando precisamos armazenar muitos dados, atribuir as mesmas funcionalidades
 // a esses dados, etc...
 
+//  2:
+// -------
+// const criaRetangulo = (lado1, lado2) => {
+//   let dadosRetangulo = {
+//     largura: lado1,
+//     altura: lado2,
+//     perimetro: 2 * (lado1 + lado2),
+//     area: lado1 * lado2
+//   };
+//   return dadosRetangulo;
+// };
+// console.log(criaRetangulo(10, 4));
+
+
 
 
 
