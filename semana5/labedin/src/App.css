@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  color: rgba(77, 75, 75, 0.836);
 }
 
 .App {
@@ -9,6 +10,7 @@
   flex-direction: column;
   align-items: center;
   margin-top: 30px;
+  background-color: rgba(128, 0, 128, 0.226);
 }
 
 .page-section-container {
