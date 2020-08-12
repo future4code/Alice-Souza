@@ -5,13 +5,22 @@ import {SecaoComentario} from '../SecaoComentario/SecaoComentario';
 import iconeCoracaoBranco from '../../img/favorite-white.svg';
 import iconeCoracaoPreto from '../../img/favorite.svg';
 import iconeComentario from '../../img/comment_icon.svg';
+import iconeNaoSalvo from '../../img/nao-salvo.png';
+import iconeSalvo from '../../img/salvo.png';
 
 export class Post extends React.Component {
   state = {
     curtido: false,
     numeroCurtidas: 0,
     comentando: false,
-    numeroComentarios: 0
+    numeroComentarios: 0,
+    salvo: false
+  };
+  onClickSalvar = () => {
+    console.log('salvou')
+    this.setState({
+      salvo: !this.state.salvo
+    });
   };
   onClickCurtida = () => {
     this.setState({
@@ -31,6 +40,12 @@ export class Post extends React.Component {
     });
   };
   render() {
+    let iconeSalvar;
+    if(this.state.salvo) {
+      iconeSalvar = iconeSalvo;
+    } else {
+      iconeSalvar = iconeNaoSalvo;
+    };
     let iconeCurtida;
     if(this.state.curtido) {
       iconeCurtida = iconeCoracaoPreto;
@@ -39,7 +54,6 @@ export class Post extends React.Component {
       this.state.numeroCurtidas = 0;
     };
     let componenteComentario;
-    let comentadoOk
     if(this.state.comentando) {
       componenteComentario = <SecaoComentario aoEnviar={this.aoEnviarComentario}/>;
     };
@@ -48,6 +62,10 @@ export class Post extends React.Component {
         <div className={'post-header'}>
           <img className={'user-photo'} src={this.props.fotoUsuario} alt={'Imagem do usuario'}/>
           <p>{this.props.nomeUsuario}</p>
+          <IconeComContador 
+            onClickIcone={this.onClickSalvar}
+            icone={iconeSalvar}
+          />
         </div>
         <img className={'post-photo'} src={this.props.fotoPost} alt={'Imagem do post'}/>
         <div className={'post-footer'}>
