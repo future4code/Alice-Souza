@@ -1,0 +1,15 @@
+.minicard-container {
+  display: flex;
+  align-items: center;
+  border: none;
+  border-radius: 20px; 
+  padding: 2px 2px;
+  margin-bottom: 10px;
+  height: 70px;
+  background-color: white;
+}
+.minicard-container > img {
+  width: 40px;
+  margin: 0 10px;
+  border-radius: 50%;
+}
