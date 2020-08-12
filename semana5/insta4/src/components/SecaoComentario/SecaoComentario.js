@@ -11,6 +11,7 @@ export class SecaoComentario extends Component {
     });
 	};
 	render() {
+		console.log(this.state.comentario);
 		return (
 			<div className={'comment-container'}>
 				<input

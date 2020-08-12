@@ -1,7 +1,9 @@
 .post-container {
-    border: 1px solid gray;
+    border: none;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.438);
     width: 300px;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+    background-color: white;
 }
 
 .post-header {
