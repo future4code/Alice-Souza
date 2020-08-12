@@ -8,7 +8,7 @@ class App extends React.Component {
       <div className={'app-container'}>
         <Post
           nomeUsuario={'Paula'}
-          fotoUsuario={'https://picsum.photos/id/20/50/50'}
+          fotoUsuario={'https://picsum.photos/id/7/50/50'}
           fotoPost={'https://picsum.photos/id/10/200/150'}
         />
         <Post
