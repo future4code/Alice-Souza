@@ -14,7 +14,10 @@ export class Post extends React.Component {
     numeroComentarios: 0
   };
   onClickCurtida = () => {
-    console.log('Curtiu!');
+    this.setState({
+      curtido: !this.state.curtido,
+      numeroCurtidas: this.state.numeroCurtidas + 1
+    });
   };
   onClickComentario = () => {
     this.setState({
@@ -33,8 +36,10 @@ export class Post extends React.Component {
       iconeCurtida = iconeCoracaoPreto;
     } else {
       iconeCurtida = iconeCoracaoBranco;
+      this.state.numeroCurtidas = 0;
     };
     let componenteComentario;
+    let comentadoOk
     if(this.state.comentando) {
       componenteComentario = <SecaoComentario aoEnviar={this.aoEnviarComentario}/>;
     };
