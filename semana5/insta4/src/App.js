@@ -1,6 +1,26 @@
 import React from 'react';
 import './App.css';
+import styled from 'styled-components';
 import Post from './components/Post/Post';
+
+const FormPost = styled.div`
+  border: none;
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.438);
+  width: 280px;
+  margin-bottom: 20px;
+  background-color: #e7dcec;
+  padding: 10px;
+  color: #535151;
+`
+const Input = styled.input`
+  width: 95%;
+  height: 15px;
+  margin-bottom: 10px;
+  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  outline: none;
+`
 
 class App extends React.Component {
   state = {
@@ -58,17 +78,18 @@ class App extends React.Component {
     return (
       <div className={'app-container'}>
         <FormPost>
-          <input
+          <h2>Crie seu Post aqui...</h2>
+          <Input
             value={this.state.valorInputNomeUser}
             onChange={this.onChangeInputNome}
             placeholder={"Seu nome"}
           />
-          <input
+          <Input
             value={this.state.valorInputFotoUser}
             onChange={this.onChangeInputUser}
             placeholder={"URL da sua foto para perfil"}
           />
-          <input
+          <Input
             value={this.state.valorInputFotoPost}
             onChange={this.onChangeInputPost}
             placeholder={"URL da sua foto para o post"}
