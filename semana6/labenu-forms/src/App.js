@@ -36,7 +36,7 @@ const Button = styled.button`
   border-radius: 5px;
   cursor: pointer;
   width: 100px;
-  margin: 0 auto;
+  margin: 20px auto 0 auto;
 `
 
 class App extends React.Component {

@@ -27,13 +27,15 @@ const Input = styled.input`
   padding: 5px;
 ` 
 const Select = styled.select`
-  margin-bottom: 40px;
+  margin-bottom: 10px;
   border: none;
   outline: none;
   width: 235px;
   height: 20px;
   border-radius: 5px;
   box-shadow: 1px 1px 2px gray;
+  height: 30px;
+  padding-left: 5px;
 `
 
 export class Etapa3 extends React.Component {
