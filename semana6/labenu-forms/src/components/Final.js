@@ -2,6 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 const Titulo = styled.h2`
+  margin-top: 50px; 
   color: #63625f;
 `
 

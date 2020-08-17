@@ -23,19 +23,20 @@ const Input = styled.input`
   width: 84%;
   height: 20px;
   border-radius: 5px;
-  box-shadow: 1px 1px 2px gray;
   padding: 5px;
+  padding-left: 8px;
+  color: #6e6f70;
 ` 
 const Select = styled.select`
   margin-bottom: 10px;
   border: none;
   outline: none;
-  width: 235px;
+  width: 237.5px;
   height: 20px;
   border-radius: 5px;
-  box-shadow: 1px 1px 2px gray;
   height: 30px;
-  padding-left: 5px;
+  padding: 0 5px;
+  color: #6e6f70;
 `
 
 export class Etapa1 extends React.Component {
@@ -44,15 +45,24 @@ export class Etapa1 extends React.Component {
       <FormContainer>
         <Titulo>Etapa 1 - Dados gerais:</Titulo>
         <Formulario>
-          <Label>1. Qual o seu nome?</Label>
-          <Input/>
-          <Label>2. Qual sua idade?</Label>
-          <Input/>
-          <Label>3. Qual seu email?</Label>
-          <Input/>
+          <Label>1. Qual o seu nome? *</Label>
+          <Input
+            value={this.props.valorNome}
+            onChange={this.props.changeNome}
+          />
+          <Label>2. Qual sua idade? *</Label>
+          <Input
+            value={this.props.valorIdade}
+            onChange={this.props.changeIdade}
+          />
+          <Label>3. Qual seu email? *</Label>
+          <Input
+            value={this.props.valorEmail}
+            onChange={this.props.changeEmail}
+          />
           <Label>4. Qual a sua escolaridade?</Label>
           <Select>
-            <option value={''}>Selecione sua escolaridade</option>
+            <option value={''}>Selecione uma opção</option>
             <option value={'medioCompleto'}>Ensino médio completo</option>
             <option value={'medioInompleto'}>Ensino médio incompleto</option>
             <option value={'superiorCompleto'}>Ensino superior completo</option>

@@ -23,8 +23,9 @@ const Input = styled.input`
   width: 84%;
   height: 20px;
   border-radius: 5px;
-  box-shadow: 1px 1px 2px gray;
   padding: 5px;
+  padding-left: 8px;
+  color: #6e6f70;
 ` 
 
 export class Etapa2 extends React.Component {
@@ -33,9 +34,9 @@ export class Etapa2 extends React.Component {
       <FormContainer>
         <Titulo>Etapa 2 - Informações do Ensino superior:</Titulo>
         <Formulario>
-          <Label>5. Qual curso?</Label>
+          <Label>5. Caso tenha concluído uma graduação, qual curso?</Label>
           <Input/>
-          <Label>6. Qual a unidade de ensino?</Label>
+          <Label>6. Caso tenha concluído uma graduação, qual a unidade de ensino?</Label>
           <Input/>
         </Formulario>
       </FormContainer>

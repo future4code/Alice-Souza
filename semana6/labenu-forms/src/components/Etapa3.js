@@ -23,19 +23,20 @@ const Input = styled.input`
   width: 84%;
   height: 20px;
   border-radius: 5px;
-  box-shadow: 1px 1px 2px gray;
   padding: 5px;
+  padding-left: 8px;
+  color: #6e6f70;
 ` 
 const Select = styled.select`
   margin-bottom: 10px;
   border: none;
   outline: none;
-  width: 235px;
+  width: 237.5px;
   height: 20px;
   border-radius: 5px;
-  box-shadow: 1px 1px 2px gray;
   height: 30px;
-  padding-left: 5px;
+  padding: 0 5px;
+  color: #6e6f70;
 `
 
 export class Etapa3 extends React.Component {
@@ -44,10 +45,11 @@ export class Etapa3 extends React.Component {
       <FormContainer>
         <Titulo>Etapa 3 - Informações gerais de ensino:</Titulo>
         <Formulario>
-          <Label>5. Por que você não terminou o curso de graduação?</Label>
+          <Label>5. Caso não tenha concluído uma graduação, por que não concluiu?</Label>
           <Input/>
           <Label>6. Você fez algum curso complementar?</Label>
           <Select>
+            <option value={''}>Selecione uma opção</option>
             <option value={'nenhum'}>Nenhum</option>
             <option value={'tecnico'}>Curso técnico</option>
             <option value={'ingles'}>Curso de inglês</option>
