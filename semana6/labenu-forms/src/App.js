@@ -4,6 +4,7 @@ import {Etapa1} from './components/Etapa1';
 import {Etapa2} from './components/Etapa2';
 import {Etapa3} from './components/Etapa3';
 import {Final} from './components/Final';
+import {ButtonNext} from './components/ButtonNext';
 
 const AppContainer = styled.div`
   display: flex;
@@ -26,21 +27,6 @@ const Titulo = styled.h1`
   margin-top: 15px;
   margin-bottom: 5px;
   font-family: Abel;
-`
-const Button = styled.button`
-  padding: 7px;
-  color: white;
-  background: #faa82a;
-  box-shadow: 2px 2px 3px gray;
-  border: none;
-  outline: none;
-  border-radius: 5px;
-  cursor: pointer;
-  width: 130px;
-  margin: 10px auto 0 auto;
-  &:hover {
-    background-color: #f09000;
-  }
 `
 
 class App extends React.Component {
@@ -78,6 +64,7 @@ class App extends React.Component {
   };
   render() {
     let etapa;
+    let botao;
     switch (this.state.etapa) {
       case 1:
         etapa =
@@ -89,12 +76,15 @@ class App extends React.Component {
           changeIdade={this.onChangeIdade}
           changeEmail={this.onChangeEmail}
          />;
+         botao = <ButtonNext onClick={this.irProximaEtapa}/>;
         break;
       case 2:
         etapa = <Etapa2/>;
+        botao = <ButtonNext onClick={this.irProximaEtapa}/>;
         break;
       case 3:
         etapa = <Etapa3/>;
+        botao = <ButtonNext onClick={this.irProximaEtapa}/>;
         break;
       case 4: 
         etapa = <Final/>;
@@ -104,7 +94,7 @@ class App extends React.Component {
       <AppContainer>
         <Titulo>Labenu Forms</Titulo>
         {etapa}
-        <Button onClick={this.irProximaEtapa}>PRÓXIMA ETAPA</Button>
+        {botao}
       </AppContainer>
     );
   };

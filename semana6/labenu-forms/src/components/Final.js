@@ -11,7 +11,8 @@ export class Final extends React.Component {
     return (
       <div>
         <Titulo>O formulário acabou :D</Titulo>
-        <p>Muito obrigado por participar! Entraremos em contato.</p>
+        <p>Muito obrigado por participar!</p> 
+        <p>Entraremos em contato.</p>
       </div>
     );
   };
