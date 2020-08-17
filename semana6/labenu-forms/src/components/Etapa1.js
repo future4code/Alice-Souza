@@ -7,7 +7,7 @@ const FormContainer = styled.div`
 `
 const Formulario = styled.div`
   text-align: start;
-  padding-left: 30px;
+  margin-left: 30px;
 `
 const Titulo = styled.h2`
   color: #63625f;
@@ -35,17 +35,6 @@ const Select = styled.select`
   border-radius: 5px;
   box-shadow: 1px 1px 2px gray;
 `
-const Button = styled.button`
-  padding: 5px;
-  color: white;
-  background: #f09000;
-  border: 1px solid gray;
-  outline: none;
-  border-radius: 5px;
-  cursor: pointer;
-`
-
-
 
 export class Etapa1 extends React.Component {
   render() {
@@ -67,7 +56,7 @@ export class Etapa1 extends React.Component {
             <option value={'superiorCompleto'}>Ensino superior completo</option>
             <option value={'superiorInCompleto'}>Ensino superior incompleto</option>
           </Select>
-          <Button>Próxima etapa</Button>
+          
         </Formulario>
       </FormContainer>
     );
