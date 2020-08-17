@@ -27,16 +27,48 @@ const Titulo = styled.h1`
   margin-bottom: 5px;
   font-family: Abel;
 `
+const Button = styled.button`
+  padding: 5px;
+  color: white;
+  background: #f09000;
+  border: 1px solid gray;
+  outline: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100px;
+  margin: 0 auto;
+`
 
 class App extends React.Component {
+  state = {
+    etapa: 1
+  };
+  irProximaEtapa = () => {
+    this.setState({
+      etapa: this.state.etapa + 1
+    });
+  };
   render() {
+    let etapa;
+    switch (this.state.etapa) {
+      case 1:
+        etapa = <Etapa1/>;
+        break;
+      case 2:
+        etapa = <Etapa2/>;
+        break;
+      case 3:
+        etapa = <Etapa3/>;
+        break;
+      case 4: 
+        etapa = <Final/>;
+        break;
+    }   
     return (
       <AppContainer>
         <Titulo>Labenu Forms</Titulo>
-        <Etapa1/>
-        <Etapa2/>
-        <Etapa3/>
-        <Final/>
+        {etapa}
+        <Button onClick={this.irProximaEtapa}>Próxima etapa</Button>
       </AppContainer>
     );
   };
