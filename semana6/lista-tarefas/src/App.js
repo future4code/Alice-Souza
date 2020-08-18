@@ -32,7 +32,19 @@ class App extends React.Component {
 
   };
   criaTarefa = () => {
-
+    if (this.state.inputValue === ''){
+      alert('Preencha o campo de tarefa!')
+    } else {
+      const novaTarefa = {
+        id: Date.now(),
+        texto: this.state.inputValue,
+        completa: false
+      };
+      const novasTarefas = [...tarefas, novaTarefa];
+      this.setState({
+        tarefas: novasTarefas
+      });
+    };
   };
   selectTarefa = (id) => {
 
