@@ -28,8 +28,10 @@ class App extends React.Component {
   componentDidMount() {
 
   };
-  onChangeInput = (event) => {
-
+  onChangeInput = e => {
+    this.setState({
+      inputValue: e.target.value 
+    })
   };
   criaTarefa = () => {
     if (this.state.inputValue === ''){
@@ -40,7 +42,7 @@ class App extends React.Component {
         texto: this.state.inputValue,
         completa: false
       };
-      const novasTarefas = [...tarefas, novaTarefa];
+      const novasTarefas = [...this.state.tarefas, novaTarefa];
       this.setState({
         tarefas: novasTarefas
       });
