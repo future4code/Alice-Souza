@@ -23,18 +23,13 @@ class App extends React.Component {
     filtro: ''
   };
   componentDidUpdate() {
-    const objetoTarefas = this.state.tarefas
-    localStorage.setItem('tarefas', JSON.stringify(objetoTarefas));
+    localStorage.setItem('tarefas', JSON.stringify(this.state.tarefas));
   };
   componentDidMount() {
     const tarefasString = localStorage.getItem('tarefas');
     const tarefasObjeto = JSON.parse(tarefasString);
     if (tarefasObjeto) {
-      this.setState({
-        id: tarefasObjeto.id,
-        texto: tarefasObjeto.texto,
-        completa: tarefasObjeto.completa
-      });
+      this.setState({tarefas: tarefasObjeto});
     };
   };
   onChangeInput = e => {
