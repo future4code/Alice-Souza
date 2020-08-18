@@ -49,14 +49,29 @@ class App extends React.Component {
     };
   };
   selectTarefa = (id) => {
-
+    const novaListaDeTarefas = this.state.tarefas.map(tarefa => {
+      if(id === tarefa.id){
+        const novaTarefa = {
+          ...tarefa,
+          completa: !tarefa.completa
+        };
+        return novaTarefa;
+      } else {
+        return tarefa;
+      };
+    });
+    this.setState({
+      tarefas: novaListaDeTarefas
+    });
   };
-  onChangeFilter = (event) => {
-
+  onChangeFilter = e => {
+    this.setState({
+      filtro: e.target.value
+    });
   };
   render() {
     const listaFiltrada = this.state.tarefas.filter(tarefa => {
-      switch (this.state.filter) {
+      switch (this.state.filtro) {
         case 'pendentes':
           return !tarefa.completa;
         case 'completas':
