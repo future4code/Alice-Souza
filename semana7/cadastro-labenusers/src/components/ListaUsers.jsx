@@ -1,14 +1,13 @@
 import React from 'react';
-import {ContainerLista} from './Styled';
+import axios from 'axios';
+import {ContainerLista, ButtonMudaPagina} from './Styled';
 
 class ListaUsers extends React.Component{
   render() {
     return (
       <ContainerLista>
+        <ButtonMudaPagina onClick={this.props.clickUserCadastro}>Voltar para cadastro</ButtonMudaPagina>
         <h1>Lista Labenusers:</h1>
-        <ul>
-          <li>{this.props.nameUser}</li>
-        </ul>
       </ContainerLista>
     );
   };
