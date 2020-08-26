@@ -11,7 +11,9 @@ export const ContainerInputs = styled.div`
   background: white;
   width: 40%;
   margin: 0 auto;
-  height: 100vh;
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 0 5px gray;
+  text-align: center;
   > input {
     margin-bottom: 15px;
     width: 50%;
@@ -21,16 +23,34 @@ export const ContainerInputs = styled.div`
     box-shadow: 0 0 3px gray;
     border-radius: 4px;
   }
-  > button {
-    padding: 5px;
-    width: 25%;
-    margin-top: 7px;
-  }
+`
+export const ButtonCadastra = styled.button`
+  padding: 5px;
+  width: 25%;
+  margin-top: 7px;
+  margin-bottom: 30px;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 1px 1px 3px gray;
+`
+export const ButtonMudaPagina = styled.button`
+  padding: 7px;
+  margin: 20px 0 30px 0;
+  background: green;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  box-shadow: 2px 2px 3px gray;
+  cursor: pointer;
 `
 export const ContainerLista = styled.div`
+  border-radius: 0 0 15px 15px;
+  box-shadow: 0 0 5px gray;
   padding: 20px;
-  background: lightgreen;
+  text-align: center;
+  background: white;
   width: 40%;
   margin: 0 auto;
-  height: 100vh;
 `
