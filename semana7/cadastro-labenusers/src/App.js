@@ -1,84 +1,36 @@
 import React from 'react';
-import axios from 'axios';
 import {AppContainer} from './components/Styled';
 import CadastroUsers from './components/CadastroUsers';
 import ListaUsers from './components/ListaUsers';
 
 class App extends React.Component{
   state = {
-    users: [],
-    valueNameUser: '',
-    valueEmailUser: '',
-    listaAberta: false
+    pagina: 'cadastroPage',
   };
-  onChangeName = e => {
-    this.setState({valueNameUser: e.target.value})
+  mudaPagina = () => {
+    this.state.pagina === 'cadastroPage' 
+    ? this.setState({pagina: 'listaPage'})
+    : this.setState({pagina: 'cadastroPage'})
   };
-  onChangeEmail = e => {
-    this.setState({valueEmailUser: e.target.value})
-  };
-  getUsers = () => {
-    const request = axios.get(
-      "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
-      {
-        headers: {
-          Authorization: "alice-souza-jackson"
-        }
-      }
-    );
-    request
-    .then((resposta) => {
-      console.log(resposta.data.result.list);
-    })
-    .catch((erro) => {
-      console.log(erro);
-    });  
-  }
-  criarListaUsers = name => {
-    const body = {
-      name: this.state.valueNameUser
+  render() {
+    const carregaPagina = () => {
+      if (this.state.pagina === 'listaPage') {
+        return (
+          <ListaUsers
+            clickUserCadastro={this.mudaPagina}
+          />
+        )
+      } else if (this.state.pagina === 'cadastroPage') {
+        return (
+          <CadastroUsers
+            clickUsersList={this.mudaPagina}
+          />
+        )
+      };
     };
-    const request = axios.post(
-      "https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users",
-      body,
-      {
-        headers: {
-          Authorization: "alice-souza-jackson"
-        }
-      }
-    )
-    request
-      .then((resposta) => {
-        alert("Usuário cadastrado com sucesso!!!");
-        this.getUsers();
-        this.setState({
-          valueNameUser: '',
-          valueEmailUser: ''
-        })
-      })
-      .catch((erro) => {
-        alert('Desculpe, aconteceu ERRO no cadastro.');
-      });
-  }
-  componentDidMount() {
-    this.getUsers();
-  }
-  verLista = () => {
-    this.setState({listaAberta: !this.state.listaAberta})
-  }
-  render() { 
     return (
       <AppContainer>
-      <CadastroUsers
-        valueName={this.state.valueNameUser}
-        changeName={this.onChangeName}
-        valueEmail={this.state.valueEmailUser}
-        changeEmail={this.onChangeEmail}
-        clickSend={() => {this.criarListaUsers(this.state.valueNameUser)}}
-      />
-      <ListaUsers
-        nameUser={'nome exemplo'}
-      />
+        {carregaPagina()}
       </AppContainer>
     );
   };
