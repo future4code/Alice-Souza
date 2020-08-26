@@ -54,3 +54,18 @@ export const ContainerLista = styled.div`
   width: 40%;
   margin: 0 auto;
 `
+export const UserInList = styled.div`
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dotted gray;
+  padding: 4px;
+  margin: 0 auto 10px auto;
+  > button {
+    background: red;
+    color: white;
+    border: none;
+    outline: none;
+    border-radius: 4px;
+  }
+`

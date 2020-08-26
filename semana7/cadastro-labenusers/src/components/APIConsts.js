@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 
-export const baseURLCreate = 
+export const BaseURL = 
 'https://us-central1-labenu-apis.cloudfunctions.net/labenusers/users';
 
 export const Authorization = {
