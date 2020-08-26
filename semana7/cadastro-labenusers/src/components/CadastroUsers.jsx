@@ -1,7 +1,7 @@
 import React from 'react';
 import axios from 'axios';
 import {ContainerInputs, ButtonMudaPagina, ButtonCadastra} from './Styled';
-import {baseURLCreate, Authorization} from './APIConsts';
+import {BaseURL, Authorization} from './APIConsts';
 
 class CadastroUsers extends React.Component{
   state = {
@@ -14,17 +14,21 @@ class CadastroUsers extends React.Component{
   onChangeEmail = e => {
     this.setState({valueEmail: e.target.value})
   };
-  createUsers = () => {
+  createUsers = async () => {
     const body = {
       name: this.state.valueName,
       email: this.state.valueEmail
     };
-    axios.post (baseURLCreate, body, Authorization)
-    .then(response => {
-      alert('Cadastro realizado com sucesso!')
-    }).catch (error => {
+    try {
+      const response = await axios.post (BaseURL, body, Authorization);
+      this.setState({
+        valueName: '',
+        valueEmail: ''
+      });
+      alert('Cadastro realizado com sucesso!');
+    } catch (error) {
       alert('Desculpe, aconteceu um ERRO no cadastro!')
-    });
+    };
   };
   render() {
     return (
