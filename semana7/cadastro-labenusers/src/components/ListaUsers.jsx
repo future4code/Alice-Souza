@@ -19,12 +19,14 @@ class ListaUsers extends React.Component{
     }
   }
   deleteUser = async (userId) => {
-    try {
-      const response = await axios.delete(`${BaseURL}/${userId}`, Authorization);
-      this.getUsers();
-      alert('Usuário deletado com sucesso!');
-    } catch (error) {
-      alert('Desculpe, não foi possível deletar o usuário!');
+    if (window.confirm('Tem certeza que deseja deletar este usuário?')){
+      try {
+        const response = await axios.delete(`${BaseURL}/${userId}`, Authorization);
+        this.getUsers();
+        alert('Usuário deletado com sucesso!');
+      } catch (error) {
+        alert('Desculpe, não foi possível deletar o usuário!');
+      };
     };
   };
   render() {
