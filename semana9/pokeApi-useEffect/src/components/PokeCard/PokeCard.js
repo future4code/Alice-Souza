@@ -1,42 +1,35 @@
-import React from 'react';
-import axios from axios;
+import React, {useState, useEffect} from 'react';
+import axios from 'axios';
 
-const PokeCard = () => {
-  
-  const [pokemon, setPokemon] = ({});
 
-  componentDidMount() {
-    this.pegaPokemon(this.props.pokemon);
-  };
+const PokeCard = (props) => {
 
-  componentDidUpdate(prevProps) {
-    if (prevProps.pokemon !== this.props.pokemon) {
-      this.pegaPokemon(this.props.pokemon);
-    };
-  };
+  const [pokemon, setPokemon] = useState({});
 
-  pegaPokemon = pokeName => {
+  useEffect(() => {
+    getPokemon(props.pokemon)
+  }, [props.pokemon]);
+
+  const getPokemon = pokeName => {
     axios
-      .get(`https://pokeapi.co/api/v2/pokemon/${pokeName}`)
-      .then(response => {
-        this.setState({ pokemon: response.data });
-      })
-      .catch(err => {
-        console.log(err);
-      });
+    .get(`https://pokeapi.co/api/v2/pokemon/${pokeName}`)
+    .then(response => {
+      setPokemon(response.data);
+    })
+    .catch(err => {
+      console.log(err);
+    });
   };
 
-  const pokemon = this.state.pokemon;
-
-  return (
-    <div>
-      <p>{pokemon.name}</p>
-      <p>{pokemon.weight} Kg</p>
-      {pokemon.types && <p>{pokemon.types[0].type.name}</p>}
-      {pokemon.sprites && (
-        <img src={pokemon.sprites.front_default} alt={pokemon.name} />
-      )}
-    </div>
-  );
+    return (
+      <PokeCardContainer>
+        <p>{pokemon.name}</p>
+        <p>{pokemon.weight} Kg</p>
+        {pokemon.types && <p>{pokemon.types[0].type.name}</p>}
+        {pokemon.sprites && (
+          <img src={pokemon.sprites.front_default} alt={pokemon.name} />
+        )}
+      </PokeCardContainer>
+    );
 };
 export default PokeCard;
