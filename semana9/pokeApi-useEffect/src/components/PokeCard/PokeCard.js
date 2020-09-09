@@ -2,9 +2,8 @@ import React from 'react';
 import axios from axios;
 
 const PokeCard = () => {
-  state = {
-    pokemon: {}
-  };
+  
+  const [pokemon, setPokemon] = ({});
 
   componentDidMount() {
     this.pegaPokemon(this.props.pokemon);

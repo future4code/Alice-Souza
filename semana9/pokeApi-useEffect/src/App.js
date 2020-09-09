@@ -3,10 +3,9 @@ import axios from 'axios';
 import PokeCard from './components/PokeCard';
 
 const App = () => {
-  state = {
-    pokeList: [],
-    pokeName: ""
-  };
+  
+  const [pokeList, setPokeList] = ([]);
+  const [pokeName, setPokeName] = ('');
 
   componentDidMount = () => {
     axios
