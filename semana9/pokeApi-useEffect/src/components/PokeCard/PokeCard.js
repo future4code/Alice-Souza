@@ -1,6 +1,6 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
-
+import {PokeCardContainer} from './Styles';
 
 const PokeCard = (props) => {
 
@@ -23,9 +23,9 @@ const PokeCard = (props) => {
 
     return (
       <PokeCardContainer>
-        <p>{pokemon.name}</p>
-        <p>{pokemon.weight} Kg</p>
-        {pokemon.types && <p>{pokemon.types[0].type.name}</p>}
+        <h3>{pokemon.name}</h3>
+        <h4>{pokemon.weight} Kg</h4>
+        {pokemon.types && <h5>{pokemon.types[0].type.name}</h5>}
         {pokemon.sprites && (
           <img src={pokemon.sprites.front_default} alt={pokemon.name} />
         )}
