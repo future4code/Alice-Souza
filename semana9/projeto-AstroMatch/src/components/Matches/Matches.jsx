@@ -1,5 +1,9 @@
 import React, {useState, useEffect} from 'react';
 import axios from 'axios';
+import {
+  MatchContainer, 
+  ButtonClear
+} from './styles';
 
 const baseUrl = "https://us-central1-missao-newton.cloudfunctions.net/astroMatch/alice-souza-jackson";
 
@@ -30,17 +34,18 @@ const Matches = () => {
 
   return (
     <div>
+      <h2>Matches</h2>
       <div>
         {matchesList.map(match => {
           return (
-            <div>
+            <MatchContainer>
               <img src={match.photo} />
               <p>{match.name}, {match.age} anos</p>
-            </div>
-          );
-        })};
+            </MatchContainer>
+          )
+        })}
       </div>
-      <button onClick={onClickClearMatches}>Limpar Matches</button>
+      <ButtonClear onClick={onClickClearMatches}>Limpar Matches</ButtonClear>
     </div>
   );
 };
