@@ -1,14 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import {Switch, Route, BrowserRouter} from 'react-router-dom';
-import HomePage from '.HomePage/HomePage';
-import ApplicationFormPage from './ApplicationFormPage/ApplicationFormPage';
-import ListTripsPage from './ListTripsPage/ListTripsPage';
-import TripDetailsPage from './TripDetailsPage/TripDetailsPage';
-import Admin from './Admin/Admin';
-import Header from './Header/Header';
-import Footer from './Footer/Footer';
-import CreateTripPage from './CreateTripPage/CreateTripPage';
+import HomePage from '../HomePage/HomePage';
+import ApplicationFormPage from '../ApplicationFormPage/ApplicationFormPage';
+import ListTripsPage from '../ListTripsPage/ListTripsPage';
+import TripDetailsPage from '../TripDetailsPage/TripDetailsPage';
+import Admin from '../Admin/Admin';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
+import CreateTripPage from '../CreateTripPage/CreateTripPage';
 
 const Router = () => {
     return (

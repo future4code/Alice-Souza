@@ -1,8 +1,9 @@
-import React from 'react';
-import styled from 'styled-components';
-import Router from './components/Router';
+import React from 'react'
+import styled from 'styled-components'
+import Router from './components/Router/Router';
 
-const AppContainer = styled.div`
+const AppContainer = styled.div
+`
 width: 100%;
 min-height: 100vh;
 `

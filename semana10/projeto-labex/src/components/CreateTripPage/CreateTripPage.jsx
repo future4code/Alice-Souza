@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import useInput from '../hooks/useInput';
+import useInput from '../../hooks/useInput';
 import {useHistory} from 'react-router-dom';
 import axios from 'axios';
 

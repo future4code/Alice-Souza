@@ -1,6 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
-import LoginPage from '../components/LoginPage';
+import LoginPage from '../LoginPage/LoginPage';
 
 const HeaderContainer = styled.div`
 width: 100%;

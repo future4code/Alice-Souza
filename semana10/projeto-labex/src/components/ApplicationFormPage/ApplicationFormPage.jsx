@@ -1,8 +1,8 @@
-import React, {useState, useEffect} from 'react';
-import axios from 'axios';
-import useInput from '../hooks/useInput';
+import React, {useState, useEffect} from 'react'
+import axios from 'axios'
+import useInput from '../../hooks/useInput';
 import {useHistory} from 'react-router-dom';
-import ListCountries from './ListCountries';
+import ListCountries from '../ListCountries/ListCountries';
 
 function ApplicationFormPage() {
 
@@ -120,7 +120,7 @@ function ApplicationFormPage() {
                         
                         <div>
                             <h2>Viagem</h2>
-                            <select name="trip" value={form.trip} onChange={handleInputChange} required>
+                            <select name="trip" value={form.trip} onChange={handleInputChange}>
                                 <option value="">Escolha uma viagem</option>
                                 {viagens.map((viagem) => {
                                     return <option key={viagem.id} value={viagem.id}>{viagem.name}</option>

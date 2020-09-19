@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import styled from "styled-components";
 import axios from "axios";
-import useInput from '../hooks/useInput';
+import useInput from '../../hooks/useInput';
 import {useHistory} from 'react-router-dom';
 
 const LoginContainer = styled.div`
