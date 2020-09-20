@@ -4,19 +4,29 @@ import LoginPage from '../LoginPage/LoginPage';
 
 const HeaderContainer = styled.div`
 width: 100%;
-height: 15vh;
-background-color: black;
-display: flex;
-flex-direction: row;
-justify-content: space-between;
+height: 80px;
+background-color: brown;
 align-items: center;
+> div {
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    > p {
+        color: white;
+        font-size: 150%;
+    }
+}
 `
 
 function Header() {
     return (
+        
         <HeaderContainer>
-            <p>LabeX</p>
-            <LoginPage/>
+            <div>
+                <p>LabeX</p>
+                <LoginPage/>
+            </div>
         </HeaderContainer>
     );
 };

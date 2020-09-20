@@ -33,6 +33,8 @@ const EntradaDeDados = styled.input`
 height: 4vh;
 margin-left: 1vw;
 margin-right: 1vw;
+border: none;
+outline: none;
 `
 
 function LoginPage() {
@@ -85,19 +87,19 @@ function LoginPage() {
             return (
                 <div>
                     <form onSubmit={handleSave}>
-                        <label>Email</label>
                         <EntradaDeDados
                             name="email" 
                             type="email" 
                             value={form.email} 
                             onChange={handleInputChange} 
+                            placeholder="Seu email"
                         />
-                        <label>Senha</label>
                         <EntradaDeDados
                             name="senha" 
                             type="password" 
                             value={form.senha} 
                             onChange={handleInputChange} 
+                            placeholder="Sua senha"
                         />
                         <BotaoLogin>ENTRAR</BotaoLogin>
                     </form>

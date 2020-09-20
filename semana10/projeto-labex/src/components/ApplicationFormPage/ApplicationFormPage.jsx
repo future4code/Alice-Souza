@@ -3,6 +3,7 @@ import axios from 'axios'
 import useInput from '../../hooks/useInput';
 import {useHistory} from 'react-router-dom';
 import ListCountries from '../ListCountries/ListCountries';
+import {Button} from './styles';
 
 function ApplicationFormPage() {
 
@@ -72,7 +73,6 @@ function ApplicationFormPage() {
                                 value={form.nome} 
                                 onChange={handleInputChange}
                                 title="Deve ter no mínimo 3 letras"
-                                pattern={"[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑ0-9' ']{3,}"}
                                 required 
                             /> 
                         </div>   
@@ -95,7 +95,6 @@ function ApplicationFormPage() {
                                 value={form.why} 
                                 onChange={handleInputChange}
                                 title="Deve ter no mínimo 30 letras"
-                                pattern={"[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑ0-9' ']{30,}"}
                                 required  
                             />
                         </div>
@@ -107,7 +106,6 @@ function ApplicationFormPage() {
                                 value={form.profissao} 
                                 onChange={handleInputChange}
                                 title="Deve ter no mínimo 10 letras"
-                                pattern={"[a-zA-ZáàâãéèêíïóôõöúçñÁÀÂÃÉÈÊÍÏÓÔÕÖÚÇÑ0-9' ']{10,}"}
                                 required  
                             />
                         </div>
@@ -119,7 +117,7 @@ function ApplicationFormPage() {
                         </div>
                         
                         <div>
-                            <h2>Viagem</h2>
+                            <h2>VIAGEM:</h2>
                             <select name="trip" value={form.trip} onChange={handleInputChange}>
                                 <option value="">Escolha uma viagem</option>
                                 {viagens.map((viagem) => {
@@ -128,7 +126,7 @@ function ApplicationFormPage() {
                             </select>
                         </div>
                         <div>
-                            <button>CADASTRAR</button>
+                            <Button>CADASTRAR</Button>
                         </div>
                     </div>
                 </form>

@@ -3,7 +3,7 @@ import React from 'react';
 const ListCountries = () =>  {
     return(
         <>
-            <option value="">Selecione um páis</option>
+            <option value="">Selecione um país</option>
             <option value="Brasil">Brasil</option>
             <option value="Afeganistão">Afeganistão</option>
             <option value="África do Sul">África do Sul</option>

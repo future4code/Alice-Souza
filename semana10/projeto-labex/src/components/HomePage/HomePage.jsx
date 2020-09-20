@@ -1,5 +1,6 @@
 import React, {useEffect} from 'react';
 import {useHistory} from 'react-router-dom';
+import {HomeContainer} from './styles';
 
 function HomePage() {
 
@@ -17,10 +18,10 @@ function HomePage() {
     };
 
     return(
-        <div>
+        <HomeContainer>
             <h1>FAÇA UMA VIAGEM ESPACIAL</h1>
             <button onClick={onClickInscrever}>INSCREVA-SE</button>
-        </div>
+        </HomeContainer>
     );
 };
 
