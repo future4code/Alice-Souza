@@ -3,11 +3,11 @@ export const goToHomePage = (history) => {
 }
 
 export const goToSignUpPage = (history) => {
-  history.push('/sign-up')
+  history.push('/cadastro')
 }
 
 export const goToPostDetails = (history) => {
-  history.push('/post-details')
+  history.push('/post')
 }
 
 export const goToFeedPage = (history) => {

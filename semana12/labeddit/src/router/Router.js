@@ -14,13 +14,13 @@ function Router() {
         <Route exact path='/'>
           <HomePage/>
         </Route>
-        <Route exact path='/sign-up'>
+        <Route exact path='/cadastro'>
           <SignUpPage/>
         </Route>
         <Route exact path='/feed'>
           <FeedPage/>
         </Route>
-        <Route exact path='/post-details'>
+        <Route exact path='/post/:postId'>
            <PostDetailsPage/> 
         </Route>
         <ErrorPage/>
