@@ -3,7 +3,7 @@ import React from 'react';
 function ErrorPage() {
   return (
     <div>
-      Página de erro!
+      Ops, ocorreu um erro com esta página!
     </div>
   )
 }
