@@ -15,6 +15,7 @@ export const CommentContainer = styled.div`
   padding: 5px 0;
   margin: 30px 25px;
   max-width: 500px;
+  box-shadow: 0 0 3px gray;
   @media (min-width: 560px) {
     margin: 30px auto;
   }

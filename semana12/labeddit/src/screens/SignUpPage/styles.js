@@ -3,10 +3,9 @@ import styled from 'styled-components';
 export const HeaderContainer = styled.div`
   width: 100%;
   height: 70px;
-  background: #a3fdff;
   display: flex;
   align-items: center;
-  box-shadow: 0 0 3px gray;
+  box-shadow: 0 0 7px gray;
   > div {
     width: 85%;
     margin: 0 auto;
