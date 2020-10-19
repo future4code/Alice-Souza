@@ -1,7 +1,7 @@
 // EXERCÍCIO 1:
 
 // A) 
-// Colocamos "node nome-do-arquivo.js" em start que fica no package. Depois no terminal, colocamos npm run nome-da-função.
+// Colocamos "node nome-do-arquivo.js" em start que fica no package. Depois no terminal, colocamos npm start argumento(s)-do-usuario.
 
 // B) 
 const name = process.argv[2]

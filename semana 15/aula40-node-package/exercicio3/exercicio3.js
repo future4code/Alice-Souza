@@ -1,4 +1,4 @@
-// EXERCÍCIO 3
+// EXERCÍCIO 3:
 
 const task = process.argv[2]
 const tasksList = ["Andar de bicicleta", "Fazer café", "Estudar inglês"]
