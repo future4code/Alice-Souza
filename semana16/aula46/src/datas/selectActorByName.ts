@@ -1,6 +1,6 @@
 import { connection } from "../index";
 
-export const getActorById = async (name: string): Promise<any> => {
+export const selectActorByName = async (name: string): Promise<any> => {
   const result = await connection.raw(`
     SELECT * FROM Actor WHERE name = '${name}'
   `)

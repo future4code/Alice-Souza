@@ -3,6 +3,7 @@ import cors from "cors";
 import knex from "knex";
 import dotenv from "dotenv";
 import { AddressInfo } from "net";
+import { getActorById } from "./endpoints/getActorById"
 
 // Configuration
 const app = express();
@@ -23,7 +24,7 @@ export const connection = knex({
 })
 
 // Endpoints
-
+app.get("/actor/:id", getActorById);
 
 
 // Function rotate
