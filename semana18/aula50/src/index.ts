@@ -4,6 +4,10 @@ import knex from "knex";
 import cors from "cors";
 import dotenv from "dotenv";
 import { AddressInfo } from "net";
+// Import functions
+import { signup } from "./endpoints/signup";
+import { login } from "./endpoints/login";
+import { getProfileUser } from "./endpoints/getProfileUser";
 
 // Connection
 export const connection = knex({
@@ -24,6 +28,9 @@ app.use(express.json())
 app.use(cors())
 
 // Endpoints
+app.post("user/signup", signup)
+app.post("user/login", login)
+app.get("user/profile", getProfileUser)
 
 // Function rotate
 const server = app.listen(process.env.PORT || 3003, () => {

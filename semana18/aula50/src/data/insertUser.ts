@@ -1,11 +1,15 @@
 import { connection } from "../index";
 
-export const createUser = async (id: string, email: string, password: string) => {
+export const insertUser = async (
+  id: string, 
+  email: string, 
+  password: string
+) => {
   await connection
     .insert({
       id,
       email,
-      password,
+      password
     })
-    .into("users");
-};
+    .into("users")
+}
