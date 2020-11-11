@@ -10,6 +10,9 @@ export default async function insertUser(
     name: string,
     nickname: string,
     email: string,
+    cep: string,
+    number: string,
+    complement: string,
     password: string,
     role: USER_ROLES
 ) {
@@ -18,6 +21,9 @@ export default async function insertUser(
         name,
         nickname,
         email,
+        cep,
+        number,
+        complement,
         password,
         role
     }).into('to_do_list_users')

@@ -8,10 +8,10 @@ export default async function getAddressByCEP(req: Request, res: Response) {
          throw new Error("Endereço não encontrado!")
       }
       res.status(200).send({
-         logradouro: address.logradouro,
-         bairro: address.bairro,
-         cidade: address.cidade,
-         estado: address.estado
+         street: address.street,
+         neighborhood: address.neighborhood,
+         city: address.city,
+         state: address.state
       })
    } catch (error) {
       res.status(400).send({ message: error.message || error.sqlMessage })

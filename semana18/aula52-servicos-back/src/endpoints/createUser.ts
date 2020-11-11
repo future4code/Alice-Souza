@@ -10,10 +10,13 @@ export default async function createUser(req: Request, res: Response) {
             !req.body.name ||
             !req.body.nickname ||
             !req.body.email ||
+            !req.body.cep ||
+            !req.body.number ||
+            !req.body.complement ||
             !req.body.password ||
             !req.body.role
         ) {
-            throw new Error('Preencha os campos "name","nickname", "email" e "password"')
+            throw new Error('Preencha todos os campos!')
         }
         const id: string = generateId()
         const cypherPassword = await hash(req.body.password);
@@ -22,6 +25,9 @@ export default async function createUser(req: Request, res: Response) {
             req.body.name,
             req.body.nickname,
             req.body.email,
+            req.body.cep,
+            req.body.number,
+            req.body.complement,
             cypherPassword,
             req.body.role
         )

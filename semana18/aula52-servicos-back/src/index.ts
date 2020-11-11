@@ -12,6 +12,7 @@ import createTask from "./endpoints/createTask";
 import getTaskById from "./endpoints/getTaskById";
 import login from "./endpoints/login";
 import getAddressByCEP from "./endpoints/getAddressByCEP";
+import createAddressUser from "./endpoints/createAddressUser";
 
 // Connection
 export const connection = knex({
@@ -41,7 +42,9 @@ app.get('/user/:id', getUserById)
 app.post('/user/edit', editUser)
 app.put('/task', createTask)
 app.get('/task/:id', getTaskById)
+app.post("/address/user/new", createAddressUser)
 app.get("/address/:cep", getAddressByCEP)
+
 
 // Function rotate
 const server = app.listen(process.env.PORT || 3003, () => {
