@@ -1,7 +1,7 @@
 import { connection } from "../index"
 import { Recipe } from "../types/recipe"
 
-export const insertRecipes = async (recipes: Recipe): Promise<any> => {
+export const insertRecipe = async (recipes: Recipe): Promise<any> => {
   const result = await connection
     .insert({
       id: recipes.id,

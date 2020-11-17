@@ -3,13 +3,13 @@ import { selectUserById } from "../data/selectUserById"
 import { getTokenData } from "../services/authenticator"
 import { AuthenticationData } from "../services/authenticator"
 
-export const getOwnProfile = async (req: Request, res: Response): Promise<void> => {
+export const getProfileById = async (req: Request, res: Response): Promise<void> => {
   try {
     const token = req.headers.authorization as string
     const authentication: AuthenticationData = await getTokenData(token)
     if (!authentication) {
       res.statusCode = 401;
-      throw new Error("Não autorizado.")
+      throw new Error("Não autorizado!")
     }
     const user = await selectUserById(authentication.id)
     if (!user) {

@@ -5,6 +5,9 @@ import dotenv from "dotenv"
 import { AddressInfo } from "net"
 import { createUser } from "./endpoints/createUser"
 import { login } from "./endpoints/login"
+import { getProfileById } from "./endpoints/getProfileById"
+import { createRecipe } from "./endpoints/createRecipe"
+import { getRecipeById } from "./endpoints/getRecipeById"
 
 dotenv.config()
 
@@ -24,8 +27,11 @@ export const connection = knex({
   }
 })
 
-app.post('/user/signup', createUser)
-app.post('/user/login', login)
+app.put("/user/signup", createUser)
+app.post("/user/login", login)
+app.get("/user/profile", getProfileById)
+app.post("/recipe/new", createRecipe)
+app.get("/recipe/:id", getRecipeById)
 
 const server = app.listen(process.env.PORT || 3003, () => {
   if (server) {
