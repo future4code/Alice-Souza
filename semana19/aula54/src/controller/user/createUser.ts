@@ -7,7 +7,7 @@ export async function createUser(
 ): Promise<void> {
   try {
     const input = {
-      name: req.body.name, 
+      name: req.body.name,
       nickname: req.body.nickname,
       email: req.body.email,
       password: req.body.password,
@@ -15,7 +15,7 @@ export async function createUser(
     }
     const token = await createUserLogic(input)
     res.status(201).send({
-      message: "Certo",
+      message: "Sucesso!",
       token
     })
   } catch (error) {

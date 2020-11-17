@@ -5,7 +5,7 @@ export enum USER_ROLES {
     ADMIN = "Admin"
 }
 
-export default async function insertUser(
+export async function insertUser(
     id: string,
     name: string,
     nickname: string,
